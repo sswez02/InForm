@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "Long-term safety of creatine supplementation",
+  "authors": "Smith J, Lee K",
+  "year": 2018,
+  "doi": "10.1234/creatine.safe.2018",
+  "journal": "Journal of Sports Nutrition",
+  "rating": 4.8,
+  "tags": ["creatine", "safety", "long-term"],
+  "sections": {
+    "abstract": "Creatine supplementation is widely used among athletes...",
+    "introduction": "Creatine monohydrate has become a popular ergogenic aid...",
+    "results": "Across 5 years of monitored use, no serious adverse events...",
+    "conclusion": "These findings support the safety of long-term creatine use..."
+  }
+}
