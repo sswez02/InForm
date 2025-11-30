@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from src.load_studies import load_studies_from_dir
-from src.indexer import TfidfIndex
+from src.indexer import TfIdfIndex
 
 
 def main() -> None:
@@ -10,7 +10,7 @@ def main() -> None:
 
     print(f"Loaded {len(studies)} studies, {len(passages)} passages.")
 
-    index = TfidfIndex()
+    index = TfIdfIndex()
     index.add_passages(passages)
     index.build()
     print(f"Index built with vocab size {len(index.vocab)}.")
@@ -46,13 +46,13 @@ def main() -> None:
             print(f"Score: {score:.3f}")
             print(f"Study: {title} (id={passage.study_id}, section={passage.section})")
             print(passage.text[:400] + ("..." if len(passage.text) > 400 else ""))
-            """
-            --------------------------------------------------------------------------------
-            Score: 0.842
-            Study: Creatine increases strength in trained men (id=1, section=abstract)
-            Creatine supplementation increased 1RM squat and bench press after 8 weeks...
-            --------------------------------------------------------------------------------
-            """
+        print("-" * 80)
+        # Example output:
+        # --------------------------------------------------------------------------------
+        # Score: 0.842
+        # Study: Creatine increases strength in trained men (id=1, section=abstract)
+        # Creatine supplementation increased 1RM squat and bench press after 8 weeks...
+        # --------------------------------------------------------------------------------
 
 
 if __name__ == "__main__":

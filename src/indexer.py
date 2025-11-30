@@ -10,7 +10,7 @@ from .text_utils import tokenise
 from .models import Passage
 
 
-class TfidfIndex:
+class TfIdfIndex:
     """
     A mini search engine over your Passage objects
 
