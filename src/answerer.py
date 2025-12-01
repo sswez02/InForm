@@ -6,6 +6,8 @@ from typing import Dict, List, Literal, Tuple, Any
 from .models import Study, Passage
 from .indexer import TfIdfIndex
 from .text_utils import tokenise
+from .retriever import Retriever
+
 
 Mode = Literal["beginner", "intermediate"]
 
@@ -197,6 +199,7 @@ def _compose_body(
 def answer_query(
     mode: Mode,
     query: str,
+    retriever: Retriever,
     index: TfIdfIndex,
     studies: List[Study],
     top_k_passages: int = 10,
@@ -215,7 +218,8 @@ def answer_query(
 
     query_tokens = tokenise(query)
 
-    results = index.search(query, top_k=top_k_passages)
+    results = retriever.search(query, top_k=top_k_passages)
+
     if not results:
         answer_text = (
             "I couldn't find any studies in the current database that directly match your question. "

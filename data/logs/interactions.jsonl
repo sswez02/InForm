@@ -1,0 +1,42 @@
+{
+  "type": "interaction",
+  "timestamp": "2025-12-02T10:30:01Z",
+  "query": "is creatine safe long term",
+  "mode": "beginner",
+  "expanded_query": "creatine safe long term ...",
+  "retrieval": {
+    "top_k_passages": 10,
+    "results": [
+      {
+        "rank": 1,
+        "score": 0.82,
+        "passage_id": 11,
+        "study_id": 1,
+        "section": "abstract",
+        "training_status": "untrained",
+        "rating": 4.8,
+        "year": 2018
+      },
+      {
+        "rank": 2,
+        "score": 0.71,
+        "passage_id": 12,
+        "study_id": 1,
+        "section": "results",
+        "training_status": "untrained",
+        "rating": 4.8,
+        "year": 2018
+      }
+    ]
+  },
+  "answer": {
+    "text": "Here's a simple summary based on scientific studies... [1]\n\nCreatine supplementation is widely used...",
+    "confidence": "high",
+    "references": [
+      {
+        "index": 1,
+        "study_id": 1
+      }
+    ]
+  }
+}

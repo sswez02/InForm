@@ -8,6 +8,7 @@ import numpy as np
 
 from .text_utils import tokenise
 from .models import Passage
+from .retriever import Retriever
 
 
 class TfIdfIndex:

@@ -1,3 +1,4 @@
+# scripts/ask.py
 from __future__ import annotations
 
 import argparse
@@ -6,6 +7,7 @@ from pathlib import Path
 from src.load_studies import load_studies_from_dir
 from src.indexer import TfIdfIndex
 from src.answerer import answer_query, Mode
+from src.logging_utils import log_interaction, build_retrieval_log
 
 
 def main() -> None:
@@ -34,18 +36,24 @@ def main() -> None:
     )
     args = parser.parse_args()
     mode: Mode = args.mode
+    query = args.query
 
     studies_dir = Path("data/studies")
+    log_path = Path("data/logs/interactions.jsonl")
+
     studies, passages = load_studies_from_dir(studies_dir)
+    study_lookup = {s.id: s for s in studies}
 
     index = TfIdfIndex()
     index.add_passages(passages)
     index.build()
 
+    raw_results = index.search(query, top_k=args.top_k_passages)
+
     ans = answer_query(
         mode=mode,
         query=args.query,
-        index=index,
+        retriever=index,
         studies=studies,
         top_k_passages=args.top_k_passages,
         max_studies=args.max_studies,
@@ -59,6 +67,21 @@ def main() -> None:
     else:
         for ref in ans.references:
             print(f"[{ref['index']}] {ref['citation']}")
+
+    retrieval_log = build_retrieval_log(
+        query=query,
+        results=raw_results,
+        studies_by_id=study_lookup,
+        top_k_passages=args.top_k_passages,
+    )
+
+    log_interaction(
+        log_path=log_path,
+        query=query,
+        mode=mode,
+        retrieval_log=retrieval_log,
+        answer=ans,
+    )
 
     print("\n=== Confidence ===")
     print(ans.confidence.capitalize())
