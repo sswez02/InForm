@@ -41,4 +41,4 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
             )
             passage_id += 1
 
-            return studies, passages
+    return studies, passages

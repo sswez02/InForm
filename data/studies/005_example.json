@@ -1,0 +1,16 @@
+{
+  "id": 5,
+  "title": "Renal function in resistance-trained individuals using creatine",
+  "authors": "Brown D, Ahmed Z",
+  "year": 2021,
+  "doi": "10.5678/creatine.kidney.2021",
+  "journal": "Clinical Exercise Physiology",
+  "rating": 4.7,
+  "tags": ["creatine", "kidney", "health"],
+  "sections": {
+    "abstract": "Concerns about kidney health remain a barrier to creatine use. This study monitored renal markers in resistance-trained adults supplementing with creatine for 12 months...",
+    "introduction": "Case reports have raised questions about whether creatine could stress renal function, particularly in individuals with high protein intake...",
+    "results": "Serum creatinine increased slightly as expected, but estimated GFR and other kidney markers remained within normal limits and were not different from controls...",
+    "conclusion": "In healthy resistance-trained adults, one year of creatine supplementation did not adversely affect kidney function..."
+  }
+}
