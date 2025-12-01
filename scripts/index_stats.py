@@ -11,8 +11,8 @@ def main() -> None:
     studies_dir = Path("data/studies")
     # # Debug: see which JSON files are picked up
     # print("JSON files in data/studies:")
-    for path in sorted(studies_dir.glob("*.json")):
-        print("  -", path.name)
+    # for path in sorted(studies_dir.glob("*.json")):
+    #     print("  -", path.name)
     studies, passages = load_studies_from_dir(studies_dir)
 
     print(f"Studies: {len(studies)}")
