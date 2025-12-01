@@ -7,6 +7,11 @@
   "journal": "Neuroscience and Sports Science",
   "rating": 4.2,
   "tags": ["creatine", "cognition", "sleep-deprivation"],
+  "population": {
+    "training_status": "trained",
+    "sample_size": 60,
+    "age_mean": 27
+  },
   "sections": {
     "abstract": "This study investigated whether creatine supplementation can attenuate cognitive performance decrements during short-term sleep restriction in healthy adults...",
     "introduction": "Creatine plays a role in brain energy metabolism, suggesting it may support cognitive function when energetic demands are high or sleep is reduced...",

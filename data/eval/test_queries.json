@@ -2,21 +2,25 @@
   {
     "query": "creatine long term safety",
     "relevant_studies": [1],
-    "tags": ["creatine", "safety"]
+    "tags": ["creatine", "safety"],
+    "preferred_training_status": "mixed"
   },
   {
     "query": "does creatine help strength",
     "relevant_studies": [1],
-    "tags": ["creatine", "performance"]
+    "tags": ["creatine", "performance"],
+    "preferred_training_status": "trained"
   },
   {
     "query": "training frequency hypertrophy",
     "relevant_studies": [2],
-    "tags": ["training", "hypertrophy"]
+    "tags": ["training", "hypertrophy"],
+    "preferred_training_status": "trained"
   },
   {
     "query": "hiit vo2 max cardio",
     "relevant_studies": [3],
-    "tags": ["hiit", "cardio"]
+    "tags": ["hiit", "cardio"],
+    "preferred_training_status": "athletes"
   }
 ]

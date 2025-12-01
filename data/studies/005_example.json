@@ -7,6 +7,11 @@
   "journal": "Clinical Exercise Physiology",
   "rating": 4.7,
   "tags": ["creatine", "kidney", "health"],
+  "population": {
+    "training_status": "trained",
+    "sample_size": 52,
+    "age_mean": 68
+  },
   "sections": {
     "abstract": "Concerns about kidney health remain a barrier to creatine use. This study monitored renal markers in resistance-trained adults supplementing with creatine for 12 months...",
     "introduction": "Case reports have raised questions about whether creatine could stress renal function, particularly in individuals with high protein intake...",

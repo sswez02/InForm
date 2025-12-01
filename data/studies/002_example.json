@@ -7,6 +7,11 @@
   "journal": "Strength and Conditioning Research",
   "rating": 4.6,
   "tags": ["creatine", "strength", "hypertrophy"],
+  "population": {
+    "training_status": "trained",
+    "sample_size": 32,
+    "age_mean": 25
+  },
   "sections": {
     "abstract": "This randomized trial examined the effects of daily creatine monohydrate supplementation on strength and muscle hypertrophy in resistance-trained men over 12 weeks...",
     "introduction": "Creatine has been repeatedly shown to increase high-intensity exercise capacity, but its impact in already trained lifters remains an area of interest...",

@@ -12,6 +12,7 @@ class Study:
     journal: Optional[str]
     rating: float
     tags: List[str] = field(default_factory=list)
+    training_status: str = "mixed"
 
 
 @dataclass

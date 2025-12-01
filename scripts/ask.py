@@ -5,14 +5,21 @@ from pathlib import Path
 
 from src.load_studies import load_studies_from_dir
 from src.indexer import TfIdfIndex
-from src.answerer import answer_query
+from src.answerer import answer_query, Mode
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Ask the agent a question")
     # Required argument ( query )
     parser.add_argument("query", type=str, help="Your question / prompt")
-    # Optional arguments ( top_k_passsages, max_studies )
+    # Optional arguments ( mode, top_k_passsages, max_studies )
+    parser.add_argument(
+        "--mode",
+        type=str,
+        choices=["beginner", "intermediate"],
+        default="beginner",
+        help="Answer style.",
+    )
     parser.add_argument(
         "--top-k-passages",
         type=int,
@@ -26,6 +33,7 @@ def main() -> None:
         help="Maximum number of distinct studies to cite.",
     )
     args = parser.parse_args()
+    mode: Mode = args.mode
 
     studies_dir = Path("data/studies")
     studies, passages = load_studies_from_dir(studies_dir)
@@ -35,6 +43,7 @@ def main() -> None:
     index.build()
 
     ans = answer_query(
+        mode=mode,
         query=args.query,
         index=index,
         studies=studies,
@@ -50,6 +59,9 @@ def main() -> None:
     else:
         for ref in ans.references:
             print(f"[{ref['index']}] {ref['citation']}")
+
+    print("\n=== Confidence ===")
+    print(ans.confidence.capitalize())
 
 
 if __name__ == "__main__":

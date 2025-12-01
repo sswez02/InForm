@@ -11,8 +11,14 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
     passage_id = 1
 
     for path in sorted(studies_dir.glob("*.json")):
+        # DEBUG: show which file we're reading
+        print(f"Loading JSON: {path}")
+
         with path.open("r", encoding="utf-8") as f:
-            data = json.load(f)
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError as e:
+                raise ValueError(f"Failed to parse JSON in {path}: {e}") from e
 
         study = Study(
             id=int(data["id"]),
@@ -23,6 +29,9 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
             journal=data.get("journal"),
             rating=float(data.get("rating", 0.0)),
             tags=data.get("tags", []),
+            training_status=data.get("population", {}).get(
+                "training_status", "unknown"
+            ),
         )
 
         studies.append(study)

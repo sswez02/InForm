@@ -7,6 +7,11 @@
   "journal": "International Journal of Sports Performance",
   "rating": 4.1,
   "tags": ["creatine", "sprinting", "team-sports"],
+  "population": {
+    "training_status": "trained",
+    "sample_size": 38,
+    "age_mean": 30
+  },
   "sections": {
     "abstract": "This double-blind study assessed the effects of creatine loading on repeated-sprint performance in elite soccer players...",
     "introduction": "Repeated sprints are a key component of many field-based sports. Creatine may improve performance by increasing phosphocreatine availability...",
