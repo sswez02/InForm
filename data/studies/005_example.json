@@ -12,6 +12,11 @@
     "sample_size": 52,
     "age_mean": 68
   },
+  "outcomes": {
+    "primary": ["kidney-function", "safety"],
+    "secondary": ["renal-markers", "health"],
+    "intervention_weeks": 52
+  },
   "sections": {
     "abstract": "Concerns about kidney health remain a barrier to creatine use. This study monitored renal markers in resistance-trained adults supplementing with creatine for 12 months...",
     "introduction": "Case reports have raised questions about whether creatine could stress renal function, particularly in individuals with high protein intake...",

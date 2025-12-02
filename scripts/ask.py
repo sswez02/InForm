@@ -37,6 +37,7 @@ def main() -> None:
     args = parser.parse_args()
     mode: Mode = args.mode
     query = args.query
+    expanded_query = query
 
     studies_dir = Path("data/studies")
     log_path = Path("data/logs/interactions.jsonl")
@@ -54,7 +55,7 @@ def main() -> None:
 
     ans = answer_query(
         mode=mode,
-        query=args.query,
+        query=query,
         retriever=index,
         studies=studies,
         top_k_passages=args.top_k_passages,
@@ -72,6 +73,7 @@ def main() -> None:
 
     retrieval_log = build_retrieval_log(
         query=query,
+        expanded_query=expanded_query,
         results=raw_results,
         studies_by_id=study_lookup,
         top_k_passages=args.top_k_passages,
@@ -81,6 +83,7 @@ def main() -> None:
         log_path=log_path,
         query=query,
         mode=mode,
+        expanded_query=expanded_query,
         retrieval_log=retrieval_log,
         answer=ans,
     )

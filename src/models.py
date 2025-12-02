@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 
 
 @dataclass
@@ -13,6 +13,8 @@ class Study:
     rating: float
     tags: List[str] = field(default_factory=list)
     training_status: str = "mixed"
+    population: Dict[str, Any] = field(default_factory=dict)
+    outcomes: Dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass

@@ -55,8 +55,11 @@ def _pick_studies_from_results(
         wt_rate = rating_weight(study.rating)  # rating
         wt_recent = recency_weight(study.year)  # publication year
         wt_tags = tag_weight(query_tokens, study.tags)  # study tags <> query match
+        wt_outcome = outcome_weight(
+            query=" ".join(query_tokens), outcomes=getattr(study, "outcomes", None)
+        )
 
-        final_score = best_score * wt_mode * wt_rate * wt_recent * wt_tags
+        final_score = best_score * wt_mode * wt_rate * wt_recent * wt_tags * wt_outcome
 
         scored_studies.append((study_id, final_score, sorted_passages))
 
@@ -122,6 +125,38 @@ TAG_SYNONYMS: Dict[str, List[str]] = {
     "hiit": ["hiit", "interval"],
     "vo2": ["vo2", "vo2max", "oxygen"],
 }
+
+OUTCOME_KEYWORDS: Dict[str, List[str]] = {
+    "strength": ["strength", "1rm", "one rep max", "power"],
+    "hypertrophy": ["hypertrophy", "muscle growth", "muscle size"],
+    "vo2": ["vo2", "vo2max", "aerobic", "cardio", "oxygen uptake"],
+    "body-composition": ["body composition", "fat mass", "lean mass", "body fat"],
+}
+
+
+def outcome_weight(query: str, outcomes: Dict[str, Any] | None) -> float:
+    """
+    Boost studies whose primary and secondary outcomes match what the user is asking about
+    """
+
+    if not outcomes:
+        return 1.0
+
+    tokens = " ".join(tokenise(query)).lower()
+
+    primary = set(outcomes.get("primary", []))
+    secondary = set(outcomes.get("secondary", []))
+
+    boost = 1.0
+
+    for outcome, words in OUTCOME_KEYWORDS.items():
+        if any(word in tokens for word in words):
+            if outcome in primary:
+                boost += 0.3
+            elif outcome in secondary:
+                boost += 0.1
+
+    return min(boost, 1.5)
 
 
 def tag_weight(query_tokens: List[str], study_tags: List[str]) -> float:
@@ -200,7 +235,6 @@ def answer_query(
     mode: Mode,
     query: str,
     retriever: Retriever,
-    index: TfIdfIndex,
     studies: List[Study],
     top_k_passages: int = 10,
     max_studies: int = 3,
@@ -273,7 +307,7 @@ def answer_query(
         )
 
     print("DEBUG study selection:")
-    for study_id, passages in chosen:
+    for study_id, _passages in chosen:
         s = study_lookup[study_id]
         print(f"  Study {study_id}: {s.title} (training_status={s.training_status})")
 

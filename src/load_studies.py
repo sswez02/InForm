@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 from pathlib import Path
 from typing import List, Tuple
@@ -20,18 +22,22 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
             except json.JSONDecodeError as e:
                 raise ValueError(f"Failed to parse JSON in {path}: {e}") from e
 
+        outcomes = data.get("outcomes", {})
+
         study = Study(
-            id=int(data["id"]),
+            id=data["id"],
             title=data["title"],
             authors=data["authors"],
-            year=int(data["year"]),
+            year=data["year"],
             doi=data.get("doi"),
             journal=data.get("journal"),
-            rating=float(data.get("rating", 0.0)),
+            rating=data.get("rating", 0.0),
             tags=data.get("tags", []),
             training_status=data.get("population", {}).get(
                 "training_status", "unknown"
             ),
+            population=data.get("population", {}),
+            outcomes=outcomes,
         )
 
         studies.append(study)

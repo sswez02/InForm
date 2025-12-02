@@ -17,7 +17,7 @@ def main():
     index.add_passages(passages)
     index.build()
 
-    print(f"Index built. Vocab size: {len(index.vocab)}")
+    print(f"Index built with vocab size: {len(index.vocab)}")
 
     # Testing
     for s in studies:

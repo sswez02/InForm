@@ -12,6 +12,11 @@
     "sample_size": 38,
     "age_mean": 30
   },
+  "outcomes": {
+    "primary": ["sprint-performance", "repeated-sprint"],
+    "secondary": ["team-sport-performance"],
+    "intervention_weeks": 1
+  },
   "sections": {
     "abstract": "This double-blind study assessed the effects of creatine loading on repeated-sprint performance in elite soccer players...",
     "introduction": "Repeated sprints are a key component of many field-based sports. Creatine may improve performance by increasing phosphocreatine availability...",

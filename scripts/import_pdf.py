@@ -81,7 +81,7 @@ def main() -> None:
         json.dump(study_dict, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote study JSON to {out_path}")
-    print("Metadata used/guessed:")
+    print("Metadata guessed:")
 
     print(f"  Title:   {study_dict['title']}")
     print(f"  Authors: {study_dict['authors']}")

@@ -205,6 +205,43 @@ def guess_tags(raw_text: str) -> list[str]:
     return sorted(set(tags))
 
 
+def guess_outcome_types(raw_text: str) -> list[str]:
+    lower = raw_text.lower()
+    out: list[str] = []
+
+    if (
+        "1rm" in lower
+        or "one-repetition maximum" in lower
+        or "maximal strength" in lower
+    ):
+        out.append("strength")
+    if (
+        "cross-sectional area" in lower
+        or "muscle thickness" in lower
+        or "hypertrophy" in lower
+    ):
+        out.append("hypertrophy")
+    if "vo2max" in lower or "vo2 max" in lower or "oxygen uptake" in lower:
+        out.append("vo2")
+    if "lean body mass" in lower or "fat mass" in lower or "body composition" in lower:
+        out.append("body-composition")
+
+    return sorted(set(out))
+
+
+def guess_intervention_weeks(raw_text: str) -> int | None:
+    # Look for "12-week", "8 week", etc.
+    matches = re.findall(r"(\d+)\s*-\s*week|\b(\d+)\s*week", raw_text.lower())
+    nums = []
+    for a, b in matches:
+        if a:
+            nums.append(int(a))
+        elif b:
+            nums.append(int(b))
+
+    return max(nums) if nums else None
+
+
 def pdf_to_study_json(
     pdf_path: Path,
     study_id: int,
@@ -245,6 +282,8 @@ def pdf_to_study_json(
     guessed_year = guess_year(raw)
     guessed_sample_size = guess_sample_size(raw)
     guessed_tags = guess_tags(raw)
+    guessed_outcomes = guess_outcome_types(raw)
+    guessed_weeks = guess_intervention_weeks(raw)
 
     title = title or guessed_title or "Unknown Title"
     authors = authors or guessed_authors or "Unknown Authors"
@@ -257,6 +296,11 @@ def pdf_to_study_json(
         population["sample_size"] = guessed_sample_size
 
     sections = split_into_sections(raw)
+    outcomes: Dict[str, Any] = {}
+    if guessed_outcomes:
+        outcomes["primary"] = guessed_outcomes
+    if guessed_weeks is not None:
+        outcomes["intervention_weeks"] = guessed_weeks
 
     return {
         "id": study_id,
@@ -269,5 +313,8 @@ def pdf_to_study_json(
         "tags": tags or [],
         "population": {"training_status": training_status},
         "population": population,
+        "sections": sections,
+        "population": population,
+        "outcomes": outcomes,
         "sections": sections,
     }

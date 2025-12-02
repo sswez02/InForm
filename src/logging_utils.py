@@ -36,10 +36,13 @@ def build_retrieval_log(
                 "year": getattr(s, "year", None),
             }
         )
-        return {
-            "top_k_passages": top_k_passages,
-            "results": rows,
-        }
+
+    return {
+        "query": query,
+        "expanded_query": expanded_query,
+        "top_k_passages": top_k_passages,
+        "results": rows,
+    }
 
 
 def log_interaction(
