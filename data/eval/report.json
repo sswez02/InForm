@@ -1,0 +1,35 @@
+{
+  "num_queries": 1,
+  "avg_metrics": {
+    "recall@1": 1.0,
+    "mrr@1": 1.0,
+    "recall@3": 1.0,
+    "mrr@3": 1.0,
+    "recall@5": 1.0,
+    "mrr@5": 1.0,
+    "training_status_match": 0.0,
+    "outcome_match": 1.0
+  },
+  "per_query": [
+    {
+      "query": "does creatine help beginners gain strength",
+      "relevant_studies": [
+        1,
+        2
+      ],
+      "metrics": {
+        "recall@1": 1.0,
+        "mrr@1": 1.0,
+        "recall@3": 1.0,
+        "mrr@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 1.0
+      },
+      "alignment": {
+        "training_status_match": 0.0,
+        "outcome_match": 1.0
+      },
+      "top1_study_id": 2
+    }
+  ]
+}

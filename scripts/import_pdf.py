@@ -73,8 +73,10 @@ def main() -> None:
 
     # Use provided title if given, otherwise guessed title from study_dict
     safe_title = args.title or study_dict["title"]
+
     # File name: 001_title-slug.json
-    fname = f"{args.id:03d}_{slugify(args.title) or 'study'}.json"
+    fname_slug = slugify(safe_title) if safe_title else "study"
+    fname = f"{args.id:03d}_{fname_slug}.json"
     out_path = out_dir / fname
 
     with out_path.open("w", encoding="utf-8") as f:

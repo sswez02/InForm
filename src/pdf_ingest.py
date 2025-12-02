@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Any
 import itertools
 import re
 
@@ -21,7 +21,6 @@ SECTION_NAMES = [
 
 
 def extract_text_from_pdf(pdf_path: Path) -> str:
-
     reader = PdfReader(str(pdf_path))
     chunks: List[str] = []
     for page in reader.pages:
@@ -35,7 +34,6 @@ def extract_text_from_pdf(pdf_path: Path) -> str:
 
 
 def split_into_sections(raw_text: str) -> Dict[str, str]:
-
     lower = raw_text.lower()
 
     matches: List[Tuple[str, int]] = []
@@ -56,7 +54,7 @@ def split_into_sections(raw_text: str) -> Dict[str, str]:
         end_position = matches[i + 1][1] if i + 1 < len(matches) else len(raw_text)
         section_text = raw_text[start_position:end_position].strip()
 
-        # Strip the heading word itself from the beginning for cleanliness
+        # Strip the heading word itself from the beginning
         heading_pattern = re.compile(r"^" + re.escape(name), re.IGNORECASE)
         section_text = heading_pattern.sub("", section_text, count=1).lstrip(": \n\t")
 
@@ -164,7 +162,7 @@ def guess_authors(raw_text: str) -> str | None:
 
 
 def guess_year(raw_text: str) -> int | None:
-    # Only scan first ~2000 chars
+    # Only scan first 2000 chars
     snippet = raw_text[:2000]
     candidates = re.findall(r"(19[5-9]\d|20[0-2]\d)", snippet)
     if not candidates:
@@ -176,13 +174,13 @@ def guess_year(raw_text: str) -> int | None:
 
 
 def guess_sample_size(raw_text: str) -> int | None:
-    # Only scan first ~8000 chars
+    # Only scan first 8000 chars
     snippet = raw_text[:8000]
-    #  Look for 'n = 23', 'n=45', '(n = 10)' etc.
+    # Look for 'n = 23', 'n=45', '(n = 10)' etc.
     matches = re.findall(r"[nN]\s*=\s*(\d+)", snippet)
     if not matches:
         return None
-    # pick the largest, often total sample
+    # Pick the largest, often total sample
     nums = [int(m) for m in matches]
     return max(nums)
 
@@ -232,7 +230,7 @@ def guess_outcome_types(raw_text: str) -> list[str]:
 def guess_intervention_weeks(raw_text: str) -> int | None:
     # Look for "12-week", "8 week", etc.
     matches = re.findall(r"(\d+)\s*-\s*week|\b(\d+)\s*week", raw_text.lower())
-    nums = []
+    nums: List[int] = []
     for a, b in matches:
         if a:
             nums.append(int(a))
@@ -255,24 +253,7 @@ def pdf_to_study_json(
     training_status: str = "unknown",
 ) -> Dict:
     """
-    Given a PDF and some metadata, return the dict:
-
-    {
-      "id": ...,
-      "title": ...,
-      "authors": ...,
-      "year": ...,
-      "doi": ...,
-      "journal": ...,
-      "rating": ...,
-      "tags": [...],
-      "population": {"training_status": "..."},
-      "sections": {
-         "abstract": "...",
-         "introduction": "...",
-         ...
-      }
-    }
+    Convert a PDF + optional metadata into our unified study JSON dict.
     """
     raw = extract_text_from_pdf(pdf_path)
 
@@ -289,13 +270,15 @@ def pdf_to_study_json(
     authors = authors or guessed_authors or "Unknown Authors"
     year = year or guessed_year or 2000
     tags = tags or guessed_tags
-    population = {
+
+    population: Dict[str, Any] = {
         "training_status": training_status,
     }
     if guessed_sample_size is not None:
         population["sample_size"] = guessed_sample_size
 
     sections = split_into_sections(raw)
+
     outcomes: Dict[str, Any] = {}
     if guessed_outcomes:
         outcomes["primary"] = guessed_outcomes
@@ -311,10 +294,7 @@ def pdf_to_study_json(
         "journal": journal,
         "rating": rating,
         "tags": tags or [],
-        "population": {"training_status": training_status},
         "population": population,
         "sections": sections,
-        "population": population,
         "outcomes": outcomes,
-        "sections": sections,
     }

@@ -1,26 +1,23 @@
 [
   {
-    "query": "creatine long term safety",
-    "relevant_studies": [1],
-    "tags": ["creatine", "safety"],
-    "preferred_training_status": "mixed"
+    "query": "does creatine help beginners gain strength",
+    "relevant_studies": [1, 2],
+    "mode": "beginner",
+    "target_outcomes": ["strength"],
+    "target_training_status": "untrained"
   },
   {
-    "query": "does creatine help strength",
-    "relevant_studies": [1],
-    "tags": ["creatine", "performance"],
-    "preferred_training_status": "trained"
-  },
-  {
-    "query": "training frequency hypertrophy",
-    "relevant_studies": [2],
-    "tags": ["training", "hypertrophy"],
-    "preferred_training_status": "trained"
-  },
-  {
-    "query": "hiit vo2 max cardio",
+    "query": "effect of high-frequency training on muscle growth in trained lifters",
     "relevant_studies": [3],
-    "tags": ["hiit", "cardio"],
-    "preferred_training_status": "athletes"
+    "mode": "intermediate",
+    "target_outcomes": ["hypertrophy"],
+    "target_training_status": "trained"
+  },
+  {
+    "query": "does HIIT improve VO2 max",
+    "relevant_studies": [4],
+    "mode": "intermediate",
+    "target_outcomes": ["vo2"],
+    "target_training_status": "mixed"
   }
 ]
