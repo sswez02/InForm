@@ -20,9 +20,9 @@ def main() -> None:
     # Optional arguments ( pdf, id, title, authors, year, doi, journal, rating, tags, training level, output directory)
     parser.add_argument("--pdf", type=str, required=True, help="Path to the PDF file.")
     parser.add_argument("--id", type=int, required=True, help="Numeric study ID.")
-    parser.add_argument("--title", type=str, required=True, help="Study title.")
-    parser.add_argument("--authors", type=str, required=True, help="Authors string.")
-    parser.add_argument("--year", type=int, required=True, help="Publication year.")
+    parser.add_argument("--title", type=str, required=False, help="Study title.")
+    parser.add_argument("--authors", type=str, required=False, help="Authors string.")
+    parser.add_argument("--year", type=int, required=False, help="Publication year.")
     parser.add_argument("--doi", type=str, default=None, help="DOI (optional).")
     parser.add_argument("--journal", type=str, default=None, help="Journal name.")
     parser.add_argument(
@@ -67,10 +67,12 @@ def main() -> None:
         doi=args.doi,
         journal=args.journal,
         rating=args.rating,
-        tags=tags,
+        tags=tags if tags else None,
         training_status=args.training_status,
     )
 
+    # Use provided title if given, otherwise guessed title from study_dict
+    safe_title = args.title or study_dict["title"]
     # File name: 001_title-slug.json
     fname = f"{args.id:03d}_{slugify(args.title) or 'study'}.json"
     out_path = out_dir / fname
@@ -79,6 +81,14 @@ def main() -> None:
         json.dump(study_dict, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote study JSON to {out_path}")
+    print("Metadata used/guessed:")
+
+    print(f"  Title:   {study_dict['title']}")
+    print(f"  Authors: {study_dict['authors']}")
+    print(f"  Year:    {study_dict['year']}")
+    print(f"  Tags:    {', '.join(study_dict['tags']) or '(none)'}")
+    if "sample_size" in study_dict["population"]:
+        print(f"  Sample size (guessed): n={study_dict['population']['sample_size']}")
 
 
 if __name__ == "__main__":
