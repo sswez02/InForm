@@ -1,12 +1,13 @@
 from pathlib import Path
 
-from src.load_studies import load_studies_from_dir
+from src.store import StudyStore
 from src.indexer import TfIdfIndex
 
 
 def main() -> None:
-    studies_dir = Path("data/studies")
-    studies, passages = load_studies_from_dir(studies_dir)
+    store = StudyStore.from_dir(Path("data/studies"))
+    studies = store.get_all_studies()
+    passages = store.get_all_passages()
 
     print(f"Loaded {len(studies)} studies, {len(passages)} passages.")
 

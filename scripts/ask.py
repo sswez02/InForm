@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from src.load_studies import load_studies_from_dir
+from src.store import StudyStore
 from src.indexer import TfIdfIndex
 from src.answerer import answer_query, Mode
 from src.logging_utils import log_interaction, build_retrieval_log
@@ -41,7 +41,9 @@ def main() -> None:
     studies_dir = Path("data/studies")
     log_path = Path("data/logs/interactions.jsonl")
 
-    studies, passages = load_studies_from_dir(studies_dir)
+    store = StudyStore.from_dir(Path("data/studies"))
+    studies = store.get_all_studies()
+    passages = store.get_all_passages()
     study_lookup = {s.id: s for s in studies}
 
     index = TfIdfIndex()
