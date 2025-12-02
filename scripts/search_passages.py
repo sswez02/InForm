@@ -40,13 +40,13 @@ def main() -> None:
 
         # Output
         print(f"\nTop results for: {query!r}")
-        for passage, score in results:
-            study = study_lookup.get(passage.study_id)
-            title = study.title if study else f"Study {passage.study_id}"
+        for p, score in results:
+            study = study_lookup.get(p.study_id)
+            title = study.title if study else f"Study {p.study_id}"
             print("-" * 80)
             print(f"Score: {score:.3f}")
-            print(f"Study: {title} (id={passage.study_id}, section={passage.section})")
-            print(passage.text[:400] + ("..." if len(passage.text) > 400 else ""))
+            print(f"Study: {title} (id={p.study_id}, section={p.section})")
+            print(p.text[:400] + ("..." if len(p.text) > 400 else ""))
         print("-" * 80)
         # Example output:
         # --------------------------------------------------------------------------------
