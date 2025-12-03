@@ -24,13 +24,13 @@ def main() -> None:
         "--top-k-passages",
         type=int,
         default=10,
-        help="How many passages to retrieve before composing.",
+        help="How many passages to retrieve before composing",
     )
     parser.add_argument(
         "--max-studies",
         type=int,
         default=3,
-        help="Maximum number of distinct studies to cite.",
+        help="Maximum number of distinct studies to cite",
     )
     args = parser.parse_args()
     mode: Mode = args.mode
