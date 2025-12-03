@@ -1,0 +1,13 @@
+{
+  "path": "data\\ft\\train_clean.jsonl",
+  "num_samples": 3,
+  "output_chars_mean": 645.6666666666666,
+  "output_chars_median": 586.0,
+  "query_chars_mean": 33.0,
+  "query_chars_median": 33.0,
+  "context_passages_mean": 10.0,
+  "context_passages_median": 10.0,
+  "mode_counts": {
+    "intermediate": 3
+  }
+}
