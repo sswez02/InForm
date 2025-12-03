@@ -1,11 +1,15 @@
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
 from src.store import StudyStore
 from src.indexer import TfIdfIndex
+from src.retriever import Retriever
+from src.dense_retriever import DenseRetriever
+from src.hybrid_retriever import HybridRetriever
 from src.text_utils import tokenise
 from src.models import Study, Passage
 
@@ -82,21 +86,37 @@ def top1_alignment(
     }
 
 
+def make_retriever(
+    kind: str,
+    passages: list[Passage],
+    tfidf_weight: float = 0.5,
+    dense_weight: float = 0.5,
+) -> Retriever:
+    if kind == "tfidf":
+        r = TfIdfIndex()
+        r.add_passages(passages)
+        r.build()
+        return r
+    elif kind == "dense":
+        r = DenseRetriever()
+        r.add_passages(passages)
+        return r
+    elif kind == "hybrid":
+        r = HybridRetriever(tfidf_weight=tfidf_weight, dense_weight=dense_weight)
+        r.add_passages(passages)
+        return r
+    else:
+        raise ValueError(f"Unknown retriever kind: {kind}")
+
+
 def eval_report(
-    store: StudyStore,
+    retriever: Retriever,
+    studies_by_id: Dict[int, Study],
     k_values: List[int],
     test_queries: List[Dict[str, Any]],
 ) -> Dict[str, Any]:
-    studies = store.get_all_studies()
-    passages = store.get_all_passages()
-    studies_by_id = {s.id: s for s in studies}
-
-    index = TfIdfIndex()
-    index.add_passages(passages)
-    index.build()
-
     per_query: List[Dict[str, Any]] = []
-    sum: Dict[str, float] = {}
+    sums: Dict[str, float] = {}
     count = 0
 
     for item in test_queries:
@@ -104,8 +124,10 @@ def eval_report(
         relevant = item.get("relevant_studies", [])
         target_ts = item.get("target_training_status")
         target_outcomes = item.get("target_outcomes", [])
-        results = index.search(query, top_k=max(k_values))
+
+        results = retriever.search(query, top_k=max(k_values))
         top_passage = results[0][0] if results else None
+
         metrics = compute_recall_mrr_for_query(results, relevant, k_values)
         align = top1_alignment(
             top_passage=top_passage,
@@ -126,32 +148,66 @@ def eval_report(
         # Sum up metrics
         count += 1
         for k, v in metrics.items():
-            sum[k] = sum.get(k, 0.0) + v
+            sums[k] = sums.get(k, 0.0) + v
         for k, v in align.items():
-            sum[k] = sum.get(k, 0.0) + v
+            sums[k] = sums.get(k, 0.0) + v
 
-        # Average
-        avg: Dict[str, float] = {}
-        for k, v in sum.items():
-            avg[k] = v / max(1, count)
+    # Average
+    avg: Dict[str, float] = {}
+    for k, v in sums.items():
+        avg[k] = v / max(1, count)
 
-        return {
-            "num_queries": count,
-            "avg_metrics": avg,
-            "per_query": per_query,
-        }
+    return {
+        "num_queries": count,
+        "avg_metrics": avg,
+        "per_query": per_query,
+    }
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Evaluate retriever backends")
+    parser.add_argument(
+        "--backend",
+        type=str,
+        choices=["tfidf", "dense", "hybrid"],
+        default="tfidf",
+        help="Which retrieval backend to evaluate.",
+    )
+    parser.add_argument(
+        "--tfidf-weight",
+        type=float,
+        default=0.5,
+        help="Weight for TF-IDF in hybrid mode.",
+    )
+    parser.add_argument(
+        "--dense-weight",
+        type=float,
+        default=0.5,
+        help="Weight for dense retriever in hybrid mode.",
+    )
+    args = parser.parse_args()
+
     studies_dir = Path("data/studies")
     test_path = Path("data/eval/test_queries.json")
     out_path = Path("data/eval/report.json")
 
     store = StudyStore.from_dir(studies_dir)
+    studies = store.get_all_studies()
+    passages = store.get_all_passages()
+    studies_by_id = {s.id: s for s in studies}
     test = load_test_queries(test_path)
 
+    # Build retriever using backend + weights
+    retriever = make_retriever(
+        kind=args.backend,
+        passages=passages,
+        tfidf_weight=args.tfidf_weight,
+        dense_weight=args.dense_weight,
+    )
+
     report = eval_report(
-        store=store,
+        retriever=retriever,
+        studies_by_id=studies_by_id,
         k_values=[1, 3, 5],
         test_queries=test,
     )
