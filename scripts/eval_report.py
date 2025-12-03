@@ -10,7 +10,7 @@ from src.indexer import TfIdfIndex
 from src.retriever import Retriever
 from src.dense_retriever import DenseRetriever
 from src.hybrid_retriever import HybridRetriever
-from src.text_utils import tokenise
+from src.text_utils import tokenize
 from src.models import Study, Passage
 
 

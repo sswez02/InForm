@@ -6,7 +6,7 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 
-from .text_utils import tokenise
+from .text_utils import tokenize
 from .models import Passage
 from .retriever import Retriever
 
@@ -33,7 +33,7 @@ class TfIdfIndex:
 
         # Store Passage
         for p in passages:
-            tokens = tokenise(p.text)
+            tokens = tokenize(p.text)
             counts = Counter(tokens)
             self.doc_token_counts.append(counts)
             # Build our vocab
@@ -94,7 +94,7 @@ class TfIdfIndex:
         if self.passage_vectors is None or self.idf is None:
             raise ValueError("No vectors build, call .build() first")
 
-        tokens = tokenise(query)
+        tokens = tokenize(query)
         if not tokens:
             return []
 

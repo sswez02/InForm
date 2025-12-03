@@ -5,7 +5,7 @@ from typing import Dict, List, Literal, Tuple, Any
 
 from .models import Study, Passage
 from .indexer import TfIdfIndex
-from .text_utils import tokenise
+from .text_utils import tokenize
 from .retriever import Retriever
 
 
@@ -142,7 +142,7 @@ def outcome_weight(query: str, outcomes: Dict[str, Any] | None) -> float:
     if not outcomes:
         return 1.0
 
-    tokens = " ".join(tokenise(query)).lower()
+    tokens = " ".join(tokenize(query)).lower()
 
     primary = set(outcomes.get("primary", []))
     secondary = set(outcomes.get("secondary", []))
@@ -250,7 +250,7 @@ def answer_query(
     # Build study lookup with study_id -> study
     study_lookup = {s.id: s for s in studies}
 
-    query_tokens = tokenise(query)
+    query_tokens = tokenize(query)
 
     results = retriever.search(query, top_k=top_k_passages)
 

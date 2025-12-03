@@ -40,7 +40,7 @@ def normalise(text: str) -> str:
     return text
 
 
-def tokenise(text: str) -> List[str]:
+def tokenize(text: str) -> List[str]:
     norm = normalise(text)
     tokens = norm.split(" ")
     return [t for t in tokens if t and t not in STOPWORDS]

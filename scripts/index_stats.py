@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 
 from src.load_studies import load_studies_from_dir
-from src.text_utils import tokenise
+from src.text_utils import tokenize
 
 
 def main() -> None:
@@ -22,7 +22,7 @@ def main() -> None:
     all_tokens = Counter()
 
     for p in passages:
-        tokens = tokenise(p.text)
+        tokens = tokenize(p.text)
         lengths.append(len(tokens))
         all_tokens.update(tokens)
 

@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Tuple
 
 from src.store import StudyStore
 from src.dense_retriever import DenseRetriever
-from src.text_utils import tokenise
+from src.text_utils import tokenize
 from src.models import Study, Passage
 
 
