@@ -1,5 +1,5 @@
-from src.indexer import TfIdfIndex
-from src.models import Passage
+from src.retrieval.indexer import TfIdfIndex
+from src.core.models import Passage
 
 
 def test_indexer_simple():

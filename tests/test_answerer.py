@@ -1,6 +1,6 @@
-from src.answerer import answer_query
-from src.indexer import TfIdfIndex
-from src.models import Study, Passage
+from src.ft.answerer import answer_query
+from src.retrieval.indexer import TfIdfIndex
+from src.core.models import Study, Passage
 
 
 def test_answer_returns_citations():

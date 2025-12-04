@@ -1,4 +1,4 @@
-from src.text_utils import normalise, tokenise
+from src.core.text_utils import normalise, tokenise
 
 
 def test_normalise_basic():
