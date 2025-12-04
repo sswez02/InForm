@@ -13,6 +13,7 @@ from src.answerer import answer_query, Mode
 from src.ft.generation import DomainLLM
 from src.ft.formatting import build_prompt
 from scripts.eval_report import load_test_queries
+from src.eval.citations import check_citations
 
 
 def make_retriever(passages: List[Passage]) -> Retriever:
@@ -80,7 +81,7 @@ def eval_finetuned_llm() -> Dict[str, Any]:
     llm = DomainLLM(
         base_model_name="meta-llama/Llama-3.1-8B-Instruct",
         lora_dir="model_lora",
-        max_new_tokens=512,
+        max_new_tokens=32,
     )
 
     per_query_results: List[Dict[str, Any]] = []
@@ -94,7 +95,13 @@ def eval_finetuned_llm() -> Dict[str, Any]:
 
         # Retrieve context
         retrieval_results = retriever.search(query, top_k=12)
-        context_for_llm = select_context_for_llm(retrieval_results, max_passages=8)
+        context_for_llm = select_context_for_llm(retrieval_results, max_passages=3)
+        # Build allowed citation indexes for LLM (based on context_for_llm)
+        allowed_indexes_llm = {
+            c["citation_index"]
+            for c in context_for_llm
+            if c.get("citation_index") is not None
+        }
 
         # Baseline answer
         baseline_answer = answer_query(
@@ -115,12 +122,23 @@ def eval_finetuned_llm() -> Dict[str, Any]:
             "Include inline numeric citations like [1], [2] that correspond "
             "to the studies in the context."
         )
+
+        print(">>> Calling LLM.generate_answer()...")
         llm_text = llm.generate_answer(
             instruction=instruction,
             query=query,
             context_passages=context_for_llm,
         )
+        print(">>> LLM.generate_answer() finished")
 
+        baseline_citation_check = check_citations(
+            baseline_text,
+            allowed_indexes_llm,
+        )
+        llm_citation_check = check_citations(
+            llm_text,
+            allowed_indexes_llm,
+        )
         # Basic metrics
         overlap = simple_overlap_score(baseline_text, llm_text)
         base_len = len(baseline_text)
@@ -139,11 +157,13 @@ def eval_finetuned_llm() -> Dict[str, Any]:
                     "length": base_len,
                     "citations": baseline_citations,
                     "citation_tokens": base_cits,
+                    "citation_check": baseline_citation_check,
                 },
                 "llm": {
                     "text": llm_text,
                     "length": llm_len,
                     "citation_tokens": llm_cits,
+                    "citation_check": llm_citation_check,
                 },
                 "metrics": {
                     "overlap_jaccard": overlap,
@@ -160,14 +180,17 @@ def eval_finetuned_llm() -> Dict[str, Any]:
         avg_len_ratio = sum(
             r["metrics"]["length_ratio"] for r in per_query_results
         ) / len(per_query_results)
+        avg_llm_cit_valid = sum(
+            r["llm"]["citation_check"]["valid_ratio"] for r in per_query_results
+        ) / len(per_query_results)
     else:
-        avg_overlap = 0.0
-        avg_len_ratio = 0.0
+        avg_overlap = avg_len_ratio = avg_llm_cit_valid = 0.0
 
     summary = {
         "num_queries": len(per_query_results),
         "avg_overlap_jaccard": avg_overlap,
         "avg_length_ratio": avg_len_ratio,
+        "avg_llm_citation_valid_ratio": avg_llm_cit_valid,
     }
 
     report = {

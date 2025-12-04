@@ -4,3 +4,22 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+
+# Local data / eval JSON outputs (keep config JSON like package.json tracked)
+data/**/*.json
+
+# Model weights / checkpoints (HF / PyTorch / etc.)
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Model / training directories
+model_lora/
+models/
+checkpoints/
+outputs/
+runs/
+logs/

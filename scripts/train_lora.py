@@ -1,15 +1,17 @@
 from __future__ import annotations
 
 import json
+import inspect
 from pathlib import Path
 
+import torch
 from datasets import load_dataset
 from transformers import (
     LlamaTokenizerFast,
     LlamaForCausalLM,
     TrainingArguments,
     Trainer,
-    DataCollatorForSeq2Seq,
+    DataCollatorForLanguageModeling,
 )
 from peft import LoraConfig, get_peft_model
 
@@ -52,10 +54,12 @@ def main():
 
     # Load tokenizer + model
     tokenizer = LlamaTokenizerFast.from_pretrained(model_name)
+
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
     model = LlamaForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype="auto",
-        device_map="auto",
+        model_name, torch_dtype="auto", device_map="auto"
     )
 
     # LoRA config from file
@@ -77,42 +81,50 @@ def main():
     val_ds = val_ds_raw.map(preprocess)
 
     def tokenize_fn(batch):
-        return tokenizer(
+        enc = tokenizer(
             batch["text"],
             padding=True,
             truncation=True,
-            max_length=2048,
-            return_tensors="pt",
+            max_length=max_length,
         )
+        enc["labels"] = enc["input_ids"].copy()
+        return enc
 
     # Tokenize
     train_ds = train_ds.map(tokenize_fn, batched=True)
     val_ds = val_ds.map(tokenize_fn, batched=True)
 
     # Data collator
-    collator = DataCollatorForSeq2Seq(
+    collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
-        model=model,
-        padding="longest",
+        mlm=False,
     )
 
     # Training args from config
-    args = TrainingArguments(
-        output_dir="checkpoints/",
-        learning_rate=cfg["learning_rate"],
-        per_device_train_batch_size=cfg["batch_size"],
-        per_device_eval_batch_size=cfg["batch_size"],
-        gradient_accumulation_steps=cfg["grad_accum"],
-        fp16=True,
-        warmup_steps=50,
-        num_train_epochs=cfg["epochs"],
-        logging_steps=10,
-        evaluation_strategy="steps",
-        eval_steps=100,
-        save_steps=200,
-        save_total_limit=5,
-        report_to="none",
-    )
+    training_kwargs = {
+        "output_dir": "checkpoints/",
+        "learning_rate": cfg["learning_rate"],
+        "per_device_train_batch_size": cfg["batch_size"],
+        "per_device_eval_batch_size": cfg["batch_size"],
+        "gradient_accumulation_steps": cfg["grad_accum"],
+        "fp16": torch.cuda.is_available(),
+        "warmup_steps": 50,
+        "num_train_epochs": cfg["epochs"],
+        "logging_steps": 10,
+        # Nice-to-have extras – will be dropped if not supported
+        "evaluation_strategy": "steps",
+        "eval_steps": 100,
+        "save_steps": 200,
+        "save_total_limit": 5,
+        "report_to": "none",
+    }
+
+    # Look at the actual signature of TrainingArguments in install
+    sig = inspect.signature(TrainingArguments.__init__)
+    allowed_params = set(sig.parameters.keys())
+
+    filtered_kwargs = {k: v for k, v in training_kwargs.items() if k in allowed_params}
+    args = TrainingArguments(**filtered_kwargs)
 
     trainer = Trainer(
         model=model,
