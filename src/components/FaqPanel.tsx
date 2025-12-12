@@ -17,7 +17,7 @@ interface FaqPanelProps {
 
 const FaqPanel: React.FC<FaqPanelProps> = ({ onPickQuestion }) => {
   return (
-    <div className='h-full flex-1 rounded-2xl border border-neutral-800 bg-neutral-950/70 p-4 md:p-5 shadow-[0_0_40px_rgba(0,0,0,0.6)]'>
+    <div className='h-full flex-1 rounded-2xl border border-neutral-800 p-4 md:p-5'>
       <div className='mb-3'>
         <h3 className='font-bold leading-tight text-white'>
           <span className='text-xl md:text-2xl lg:text-3xl'>Commonly asked questions</span>

@@ -10,8 +10,8 @@ import { PointerHighlight } from '@/components/ui/pointer-highlight';
 const SCRIPT_LINES = [
   'Scroll to reveal..',
   'We live in an age where information is everywhere,',
-  'yet contradictions and confusion persist, even among experts',
-  'To help you navigate the sea of knowledge, InForm grounds every answer in real research',
+  'yet contradictions and confusion persist, even among experts.',
+  'To help you navigate the sea of knowledge, InForm grounds every answer in real research.',
 ];
 
 const HeroScript = ({ progress }: { progress: MotionValue<number> }) => {
@@ -67,19 +67,7 @@ const AnimatedTitleBlock = () => {
           pointerClassName='text-white'
           containerClassName='inline-flex ml-1'
         >
-          <span
-            className='relative z-10 font-semibold text-transparent'
-            style={{
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              backgroundImage: `url(${new URL('@/assets/mask.png', import.meta.url).toString()})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            InForm.
-          </span>
+          <span className='relative z-10 font-semibold text-white'>InForm.</span>
         </PointerHighlight>
       </h1>
 
