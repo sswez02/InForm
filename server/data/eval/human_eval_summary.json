@@ -1,0 +1,20 @@
+{
+  "num_rated": 0,
+  "clarity": {
+    "baseline": 0.0,
+    "llm": 0.0
+  },
+  "factuality": {
+    "baseline": 0.0,
+    "llm": 0.0
+  },
+  "citation_faithfulness": {
+    "baseline": 0.0,
+    "llm": 0.0
+  },
+  "overall_preference_counts": {
+    "baseline": 0,
+    "llm": 0,
+    "tie": 0
+  }
+}

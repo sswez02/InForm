@@ -1,0 +1,217 @@
+{
+  "summary": {
+    "num_queries": 3,
+    "avg_overlap_jaccard": 0.0,
+    "avg_length_ratio": 0.5002192428406954,
+    "avg_llm_citation_valid_ratio": 0.0
+  },
+  "per_query": [
+    {
+      "query": "does creatine help beginners gain strength",
+      "mode": "beginner",
+      "baseline": {
+        "text": "Beginner mode: I'll keep the explanation simple.\n\n\nCreatine supplementation provides additional strength and muscle growth benefits even in trained individuals following a structured resistance program... [1]\n\nCreatine monohydrate has become a popular ergogenic aid due to its effects on strength and lean body mass. However, some concerns remain about potential long-term adverse effects... [2]\n\nIn healthy resistance-trained adults, one year of creatine supplementation did not adversely affect kidney function... [3]",
+        "length": 519,
+        "citations": [
+          {
+            "index": 1,
+            "study_id": 2,
+            "citation": "Garcia L, Thompson R (2020). Effects of creatine on strength and hypertrophy in trained men. Strength and Conditioning Research. DOI: 10.2345/creatine.strength.2020"
+          },
+          {
+            "index": 2,
+            "study_id": 1,
+            "citation": "Smith J, Lee K (2018). Long-term safety of creatine supplementation. Journal of Sports Nutrition. DOI: 10.1234/creatine.safe.2018"
+          },
+          {
+            "index": 3,
+            "study_id": 5,
+            "citation": "Brown D, Ahmed Z (2021). Renal function in resistance-trained individuals using creatine. Clinical Exercise Physiology. DOI: 10.5678/creatine.kidney.2021"
+          }
+        ],
+        "citation_tokens": {
+          "count": 3,
+          "unique": [
+            1,
+            2,
+            3
+          ]
+        },
+        "citation_check": {
+          "total": 3.0,
+          "unique": 3.0,
+          "valid": 3.0,
+          "invalid": 0.0,
+          "valid_ratio": 1.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "llm": {
+        "text": "factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors",
+        "length": 255,
+        "citation_tokens": {
+          "count": 0,
+          "unique": []
+        },
+        "citation_check": {
+          "total": 0.0,
+          "unique": 0.0,
+          "valid": 0.0,
+          "invalid": 0.0,
+          "valid_ratio": 0.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": []
+        }
+      },
+      "metrics": {
+        "overlap_jaccard": 0.0,
+        "length_ratio": 0.4913294797687861
+      }
+    },
+    {
+      "query": "effect of high-frequency training on muscle growth in trained lifters",
+      "mode": "intermediate",
+      "baseline": {
+        "text": "Intermediate mode: Using more technical language.\n\n\nCreatine has been repeatedly shown to increase high-intensity exercise capacity, but its impact in already trained lifters remains an area of interest... [1]\n\nShort-term creatine loading enhanced repeated-sprint performance in team-sport athletes, supporting its use in high-intensity intermittent sports... [2]\n\nIn healthy resistance-trained adults, one year of creatine supplementation did not adversely affect kidney function... [3]",
+        "length": 487,
+        "citations": [
+          {
+            "index": 1,
+            "study_id": 2,
+            "citation": "Garcia L, Thompson R (2020). Effects of creatine on strength and hypertrophy in trained men. Strength and Conditioning Research. DOI: 10.2345/creatine.strength.2020"
+          },
+          {
+            "index": 2,
+            "study_id": 4,
+            "citation": "O'Connor P, Silva R (2017). Impact of creatine on sprint performance in team-sport athletes. International Journal of Sports Performance. DOI: 10.4567/creatine.sprint.2017"
+          },
+          {
+            "index": 3,
+            "study_id": 5,
+            "citation": "Brown D, Ahmed Z (2021). Renal function in resistance-trained individuals using creatine. Clinical Exercise Physiology. DOI: 10.5678/creatine.kidney.2021"
+          }
+        ],
+        "citation_tokens": {
+          "count": 3,
+          "unique": [
+            1,
+            2,
+            3
+          ]
+        },
+        "citation_check": {
+          "total": 3.0,
+          "unique": 3.0,
+          "valid": 3.0,
+          "invalid": 0.0,
+          "valid_ratio": 1.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "llm": {
+        "text": "factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors",
+        "length": 255,
+        "citation_tokens": {
+          "count": 0,
+          "unique": []
+        },
+        "citation_check": {
+          "total": 0.0,
+          "unique": 0.0,
+          "valid": 0.0,
+          "invalid": 0.0,
+          "valid_ratio": 0.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": []
+        }
+      },
+      "metrics": {
+        "overlap_jaccard": 0.0,
+        "length_ratio": 0.5236139630390144
+      }
+    },
+    {
+      "query": "does HIIT improve VO2 max",
+      "mode": "intermediate",
+      "baseline": {
+        "text": "Intermediate mode: Using more technical language.\n\n\nRepeated sprints are a key component of many field-based sports. Creatine may improve performance by increasing phosphocreatine availability... [1]\n\nCreatine has been repeatedly shown to increase high-intensity exercise capacity, but its impact in already trained lifters remains an area of interest... [2]\n\nSerum creatinine increased slightly as expected, but estimated GFR and other kidney markers remained within normal limits and were not different from controls... [3]",
+        "length": 525,
+        "citations": [
+          {
+            "index": 1,
+            "study_id": 4,
+            "citation": "O'Connor P, Silva R (2017). Impact of creatine on sprint performance in team-sport athletes. International Journal of Sports Performance. DOI: 10.4567/creatine.sprint.2017"
+          },
+          {
+            "index": 2,
+            "study_id": 2,
+            "citation": "Garcia L, Thompson R (2020). Effects of creatine on strength and hypertrophy in trained men. Strength and Conditioning Research. DOI: 10.2345/creatine.strength.2020"
+          },
+          {
+            "index": 3,
+            "study_id": 5,
+            "citation": "Brown D, Ahmed Z (2021). Renal function in resistance-trained individuals using creatine. Clinical Exercise Physiology. DOI: 10.5678/creatine.kidney.2021"
+          }
+        ],
+        "citation_tokens": {
+          "count": 3,
+          "unique": [
+            1,
+            2,
+            3
+          ]
+        },
+        "citation_check": {
+          "total": 3.0,
+          "unique": 3.0,
+          "valid": 3.0,
+          "invalid": 0.0,
+          "valid_ratio": 1.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "llm": {
+        "text": "factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors factors",
+        "length": 255,
+        "citation_tokens": {
+          "count": 0,
+          "unique": []
+        },
+        "citation_check": {
+          "total": 0.0,
+          "unique": 0.0,
+          "valid": 0.0,
+          "invalid": 0.0,
+          "valid_ratio": 0.0,
+          "invalid_ratio": 0.0,
+          "hallucinated_indexes": [],
+          "used_indexes": []
+        }
+      },
+      "metrics": {
+        "overlap_jaccard": 0.0,
+        "length_ratio": 0.4857142857142857
+      }
+    }
+  ]
+}

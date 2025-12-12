@@ -1,0 +1,3175 @@
+[
+  {
+    "query": "Is creatine safe for beginners?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Creatine monohydrate is generally considered safe [1]. Studies show that creatine supplementation can improve muscle strength and performance during exercise [2]. One study showed that after six days of creatine supplementation, subjects had substantially higher strength . Creatine is naturally produced in your body and can be obtained through foods like fish and red meat [2].",
+    "answer_length": 379,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 65,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is creatine safe for beginners?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine is generally considered safe, and its benefits extend beyond just experienced lifters. Here's a breakdown of its safety and efficacy, drawing from the provided studies: **Safety Profile:** * **General Safety:** Creatine monohydrate is the most studied form and is considered safe [1].\n* **Older Adults:** Creatine monohydrate is also considered safe for use in older adults [2]. **Dosage and Timing:** * **Loading Phase:** A common strategy involves a loading phase of 20 g/day for 5-7 days, followed by a maintenance phase of 2-5 g/day [1]. This method rapidly increases intramuscular creatine stores [1].\n* **Maintenance Dose:** Alternatively, a consistent dose of 3 g/day can be used to saturate muscle creatine stores in about 28 days [1].\n* **Individualized Dosing:** Relative dosing strategies (0.03 to 0.14 g/kg/day) can account for differences in body mass [1]. **Forms of Creatine:** * **Creatine Monohydrate:** This is the most researched and widely used form. It is effectively absorbed by muscle tissue",
+    "answer_length": 1023,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 65,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "How much creatine should I take per day?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not specify the exact dosage of creatine. However, the studies do suggest that creatine supplementation, especially when combined with resistance training, can increase body mass and fat-free mass while reducing body fat percentage [1], [2]. The positive effects on body composition are well-documented [2], and these effects are enhanced when a maintenance dose of creatine is used [1].",
+    "answer_length": 427,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How much creatine should I take per day?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine supplementation, especially when combined with resistance training, has demonstrated positive effects on body composition [1]. Studies show that creatine supplementation increases body mass and fat-free mass while reducing body fat percentage [2]. To maximize these benefits, consider the following: * **Dosage:** Studies that incorporated a maintenance dose of creatine had greater effects on body composition [2].\n* **Combination with Resistance Training:** The positive effects of creatine are more pronounced when combined with resistance training [1].\n* **Maintenance Dose:** Following an initial loading phase (if you choose to do one), a maintenance dose is important for sustained benefits [2]. While the studies provided do not specify an exact dosage, they highlight the importance of a maintenance dose in conjunction with resistance training for improved body composition [2].",
+    "answer_length": 897,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Do I need a creatine loading phase?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not mention a creatine loading phase. Therefore, I cannot answer your question.",
+    "answer_length": 119,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Do I need a creatine loading phase?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine is a popular supplement known for boosting athletic performance [1]. It increases strength, stamina, and speed, and may improve performance in high-intensity exercises [1]. While creatine supplementation generally increases muscle creatine levels, the need for a loading phase is not explicitly addressed in the provided studies. One study showed that creatine monohydrate (CrM) supplementation increased muscle creatine levels, while creatyl-L-leucine (CLL) did not statistically raise muscle creatine levels over two weeks . Another study reported that creatine supplementation led to a 0.99 ± 0.83 kg increase in body mass . Creatine allows for an increased fuel supply that is readily available throughout the body, leading to an increased rate of protein synthesis during activities with high-energy demand [2]. Creatine monohydrate (CM) is the form of creatine supplementation that has been most widely used [2].",
+    "answer_length": 927,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Does creatine cause water retention or bloating?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "The excerpt provided does not contain information about water retention or bloating. Therefore, I cannot answer your question.",
+    "answer_length": 126,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Does creatine cause water retention or bloating?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine supplementation has hydrating effects [1]. Creatine allows for an increased fuel supply that is readily available throughout the body, leading to an increased rate of protein synthesis [1].",
+    "answer_length": 198,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is creatine safe for long-term use?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, creatine monohydrate is considered a safe supplement to use [1], [2]. Studies have disproved concerns about liver and kidney issues, dehydration, and cramping in healthy individuals [1]. In fact, creatine may even help prevent dehydration and muscle cramping during exercise in extreme conditions [1]. For older adults, long-term use (more than 12 weeks) of low-dose creatine combined with resistance training has shown potential benefits for muscle strength, lean mass, and bone mineral density [2].",
+    "answer_length": 505,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is creatine safe for long-term use?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine monohydrate (CM) is considered a safe supplement to use [1], [2]. Studies have disproved concerns about liver and kidney failure, dehydration, and cramping in healthy individuals [2]. In fact, CM may even prevent dehydration and muscle cramping when athletes exercise in extreme environmental conditions [2]. For older adults, research suggests that continuous, daily, low-dose creatine supplementation combined with at least 12 weeks of resistance training can improve upper and/or lower body strength, functional capacity, and lean mass [2]. Potential increases in regional bone mineral density of the femur are also possible, but may require at least 1 year of creatine supplementation combined with moderate resistance training [2]. However, some studies have reported mild to moderate gastrointestinal disturbances and muscle cramping with creatine supplementation [2]. One study reported ST-segment depression during exercise tests in some participants, warranting further investigation into cardiovascular-related adverse events following long-term creatine use [2]. Overall, creatine supplementation combined with resistance training appears to be a safe and effective therapeutic strategy to support healthy musculoskeletal aging [2].",
+    "answer_length": 1252,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can teenagers take creatine safely?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "The current evidence is insufficient to draw conclusions about the effect of creatine in women or older individuals [1]. Because no long-term studies have been performed on the safety of creatine supplementation, its use should not be universally recommended [1].",
+    "answer_length": 263,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 65,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Can teenagers take creatine safely?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the provided excerpts, it's difficult to definitively say whether creatine is safe for teenagers. Here's what the studies suggest: * **Lack of Long-Term Safety Studies:** One study notes that \"no long-term studies have been performed on the safety of creatine supplementation\" [1]. Because of this, the study suggests that creatine supplementation \"should not be universally recommended\" [1]. It's important to note that the studies provided do not specifically address the use of creatine in teenagers.",
+    "answer_length": 512,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 65,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Should I take creatine before or after my workout?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For beginners, creatine supplementation can be beneficial when combined with resistance training to increase muscle mass and strength [1]. While research indicates both pre- and post-exercise creatine supplementation are effective, there's some evidence that taking creatine after your workout might be slightly better for muscle growth [2], [1]. A simple recommendation is to take creatine after training to maximize gains in muscle mass and strength [1].",
+    "answer_length": 456,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review"
+      },
+      {
+        "index": 2,
+        "study_id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review"
+      }
+    ],
+    "studies": [
+      {
+        "id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Should I take creatine before or after my workout?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on current research, post-exercise creatine supplementation may be slightly more effective for increasing muscle mass [1]. A meta-analysis indicated that lean tissue mass increased to a greater extent with post-exercise creatine compared to pre-exercise creatine, although there were no significant differences in maximal strength [2]. **Mechanisms and Evidence:** * **Increased Nutrient Delivery:** Creatine timing may be important due to the upregulation of creatine transport kinetics, increased Na+-K+ pump function during exercise, and increased blood flow to exercising muscles [2]. Elevated blood flow during and after resistance training can maximize nutrient delivery to muscles [2].\n* **Study Findings:** One study found that post-exercise creatine supplementation led to a 3% gain in fat-free mass and a 7.5% increase in 1RM bench press, compared to a 1.3% gain in fat-free mass and a 6.8% increase in 1RM bench press with pre-exercise creatine [2]. However, other studies in older adults found no statistical difference between pre- and post-exercise creatine supplementation after 12 weeks or 8 months of resistance training [2]. **Practical Recommendations:** * **Post-Exercise Preference:** While",
+    "answer_length": 1217,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review"
+      },
+      {
+        "index": 2,
+        "study_id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review"
+      }
+    ],
+    "studies": [
+      {
+        "id": 58,
+        "title": "Timing of Creatine Supplementation and Resistance Training: A Brief Review",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does creatine help with endurance or just strength?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Creatine primarily helps with strength during maximal resistance exercises [1]. It may allow you to increase the amount of work you do during training and decrease recovery time [1]. However, there's not enough evidence to say it improves endurance or athletic performance in complex movements [1]. Creatine's benefits are best seen when combined with resistance training [1].",
+    "answer_length": 376,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 90,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does creatine help with endurance or just strength?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Creatine supplementation primarily benefits maximal resistance exercise performance in previously trained young men [1]. There's not enough evidence to suggest it improves other measures of strength like cycle ergometry sprint peak power or isokinetic dynamometer peak torque [1]. The effect of creatine on endurance, submaximal exercise, or actual \"on-field\" athletic performance was not addressed in the study [1]. Creatine's ergogenic properties may stem from enabling increased work during training and reducing recovery time [1]. To increase strength and power, creatine should be combined with appropriate training [1]. Studies that found a benefit from creatine supplementation typically involved young, previously trained men engaged in resistance training, with maximal weight lifted as the outcome [1]. Studies that didn't find a difference often involved less trained or older individuals, didn't include resistance training, or investigated outcomes other than maximal weight lifted [1]. The meta-analysis focused on \"pure strength\" or \"power\" measurements, acknowledging that muscle strength is related to muscle endurance, although the point at which an exercise becomes a test of endurance rather than strength is not clearly defined [1]. There's a physiological basis for believing creatine supplementation would more markedly improve performance in maximal or shorter duration exercises requiring strength rather than endurance [",
+    "answer_length": 1446,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 65,
+        "title": "Does Oral Creatine Supplementation Improve Strength? A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 90,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is creatine monohydrate better than other forms of creatine?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, creatine monohydrate is generally considered the best form of creatine to use [1]. It's the most studied form and is absorbed well by the body [1]. Other forms of creatine haven't been proven to be better or safer than creatine monohydrate [1]. So, sticking with creatine monohydrate is a good choice.",
+    "answer_length": 306,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is creatine monohydrate better than other forms of creatine?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, creatine monohydrate is generally considered the superior form of creatine supplementation [1]. Here's why: * **Efficacy:** Creatine monohydrate is the most extensively researched form of creatine [1]. Studies have consistently demonstrated its effectiveness in increasing intramuscular creatine stores and enhancing exercise performance [1]. * **Absorption and Retention:** Creatine monohydrate undergoes minimal degradation during digestion and is almost completely absorbed by muscle tissue, with a high retention rate of approximately 99% after oral consumption [1]. * **Alternative Forms:** While manufacturers have introduced other forms of creatine, claiming greater bioavailability and efficacy, the available evidence is insufficient to support the superiority or safety of these alternatives compared to creatine monohydrate [1]. The physical and chemical properties of these variants are theorized (not proven) to provide greater bioavailability and efficacy compared to creatine monohydrate [1]. In summary, creatine monohydrate remains the gold standard due to its proven efficacy, high absorption rate, and extensive research backing its use [1].",
+    "answer_length": 1165,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Do I have to cycle off creatine?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "The provided studies do not contain information about cycling off creatine.",
+    "answer_length": 75,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Do I have to cycle off creatine?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the provided excerpts, there's no indication that cycling off creatine is necessary. Here's a breakdown: * **Long-term use:** Creatine has a \"lengthy usage history\" as a popular supplement for increasing the efficacy of strength training [1]. * **Creatine and Creatinine:** About 2% of the body's stored creatine is spontaneously transformed into creatinine daily [1]. The body naturally regulates creatine levels, suggesting continuous supplementation is acceptable. * **Saturation and Maintenance:** A common creatine supplementation protocol involves a loading phase (20 g/day for 5-7 days) followed by a maintenance phase (2-5 g/day) [2]. Alternatively, 3 g/day without a loading phase can saturate intramuscular creatine stores in about 28 days [2]. These protocols imply continuous use for maintaining elevated creatine levels.",
+    "answer_length": 842,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 62,
+        "title": "Creatine Supplementation Protocols With or Without Training Interventions on Body Composition: A GRADE-Assessed Systematic Review and Dose–Response Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 77,
+        "title": "Effectiveness of Creatine in Metabolic Performance: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How much protein do I need per day to build muscle?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "To build or maintain muscle mass, aim for a daily protein intake of 1.2 to 1.6 grams per kilogram of your body weight [1]. Remember that protein is essential for muscle health [1], [2].",
+    "answer_length": 185,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 38,
+        "title": "Systematic Review and Meta-Analysis of Protein Intake to Support Muscle Mass and Function in Healthy Adults"
+      },
+      {
+        "index": 2,
+        "study_id": 51,
+        "title": "Is Protein the Forgotten Ingredient: Effects of Higher Compared to Lower Protein Diets on Cardiometabolic Risk Factors – A Systematic Review and Meta-Analysis of Randomised Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 38,
+        "title": "Systematic Review and Meta-Analysis of Protein Intake to Support Muscle Mass and Function in Healthy Adults",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 51,
+        "title": "Is Protein the Forgotten Ingredient: Effects of Higher Compared to Lower Protein Diets on Cardiometabolic Risk Factors – A Systematic Review and Meta-Analysis of Randomised Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How much protein do I need per day to build muscle?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "To optimize muscle mass gain, a higher daily protein intake of 1.2 to 1.6 g/kg of body weight per day has been suggested for healthy adults [1]. This is more than the recommended dietary allowance of 0.8 g protein/kg BW/day, which is generally considered sufficient to maintain nitrogen balance [1]. Sufficient protein intake is required to maintain muscle mass [1]. Dietary proteins are important sources of energy and essential amino acids, necessary for various bodily processes, including tissue growth and maintenance [2].",
+    "answer_length": 527,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 38,
+        "title": "Systematic Review and Meta-Analysis of Protein Intake to Support Muscle Mass and Function in Healthy Adults"
+      },
+      {
+        "index": 2,
+        "study_id": 51,
+        "title": "Is Protein the Forgotten Ingredient: Effects of Higher Compared to Lower Protein Diets on Cardiometabolic Risk Factors – A Systematic Review and Meta-Analysis of Randomised Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 38,
+        "title": "Systematic Review and Meta-Analysis of Protein Intake to Support Muscle Mass and Function in Healthy Adults",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 51,
+        "title": "Is Protein the Forgotten Ingredient: Effects of Higher Compared to Lower Protein Diets on Cardiometabolic Risk Factors – A Systematic Review and Meta-Analysis of Randomised Controlled Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is whey protein better than whole food protein for muscle growth?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "It's tough to definitively say whey protein is better than other protein sources for muscle growth [1]. Some studies show whey protein can significantly enhance gains in lean body mass compared to soy protein [1]. However, other studies indicate that when plant-based diets are supplemented with protein isolates, they can be as effective as mixed diets with whey protein for muscle strength and mass accrual in untrained young men [2]. Ultimately, getting enough protein (around 1.6 g/kg/day) is key, and a mix of plant-based foods can provide a complete protein profile [2]. Animal protein may have a small beneficial effect over non-soy plant protein for muscle mass [3].",
+    "answer_length": 674,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 44,
+        "title": "The Impact of Protein Quality on the Promotion of Resistance-Training-Induced Changes in Muscle Mass"
+      },
+      {
+        "index": 2,
+        "study_id": 55,
+        "title": "High-Protein Plant-Based Diet Versus a Protein-Matched Omnivorous Diet to Support Resistance Training Adaptations: A Comparison Between Habitual Vegans and Omnivores"
+      },
+      {
+        "index": 3,
+        "study_id": 52,
+        "title": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-Analysis of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 44,
+        "title": "The Impact of Protein Quality on the Promotion of Resistance-Training-Induced Changes in Muscle Mass",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 52,
+        "title": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 55,
+        "title": "High-Protein Plant-Based Diet Versus a Protein-Matched Omnivorous Diet to Support Resistance Training Adaptations: A Comparison Between Habitual Vegans and Omnivores",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is whey protein better than whole food protein for muscle growth?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "It's difficult to definitively say that whey protein is superior to other protein sources, including whole food protein, for muscle growth [1]. Here's a breakdown of what the research suggests: **Protein Quality and Leucine:** * **Leucine's Role:** Leucine is a key amino acid that triggers muscle protein synthesis (MPS), which is essential for muscle growth [1].\n* **Whey vs. Other Sources:** Whey protein generally has a higher leucine content and availability compared to some other sources like soy, rice, and pea protein [1]. This higher leucine content in whey can lead to a greater stimulation of MPS, potentially resulting in more muscle mass gains [1]. **Study Findings and Considerations:** * **Whey vs. Soy:** One long-term study (9 months) showed that whey protein supplementation led to significantly greater gains in lean body mass compared to soy protein [1]. In fact, the soy group's muscle mass gain was similar to a carbohydrate-only group, suggesting soy was no better than carbs in that study [1].\n* **Whey vs. Rice:** A study using very high doses (48g) of both whey and rice protein found similar results [1].",
+    "answer_length": 1132,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 44,
+        "title": "The Impact of Protein Quality on the Promotion of Resistance-Training-Induced Changes in Muscle Mass"
+      }
+    ],
+    "studies": [
+      {
+        "id": 44,
+        "title": "The Impact of Protein Quality on the Promotion of Resistance-Training-Induced Changes in Muscle Mass",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does protein timing around the workout really matter?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For beginners, it seems that the most important thing is to consume enough protein throughout the day, rather than focusing specifically on when you eat it around your workouts [1], [2]. Studies show that when people consume enough protein, the timing of when they eat it doesn't seem to make a big difference in muscle growth or strength gains [1]. To maximize muscle growth, aim for at least 1.6 grams of protein per kilogram of body weight per day [1]. Focus on getting this amount consistently, and don't stress too much about the timing [1], [2].",
+    "answer_length": 551,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 95,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Does protein timing around the workout really matter?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "For intermediate lifters, the importance of protein timing around workouts may not be as critical as once thought [1], [2], [3]. A meta-analysis investigated the effects of protein timing on strength and hypertrophy adaptations following long-term resistance training [1]. **Hypertrophy:** * A simple analysis showed a small to moderate effect on muscle hypertrophy (ES = 0.24) with protein timing, but no significant effect on muscle strength [1], [3].\n* However, when controlling for other factors like total protein intake, the positive effects of protein timing on muscle growth disappeared [1].\n* The key factor for maximizing muscle protein accretion is consuming adequate protein in combination with resistance exercise [1], [2].\n* Total protein intake was the most important predictor of hypertrophy, with an approximate 0.2 increase in effect size (ES) for every 0.5 g/kg increase in protein ingestion [1].\n* A protein consumption of at least 1.6 g/kg/day is necessary to maximize muscle protein accretion in individuals involved in resistance training programs [1]. Some studies suggest protein requirements may decrease slightly to approximately 1.4 g/kg/day in well-trained",
+    "answer_length": 1185,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 42,
+        "title": "The Effect of Protein Timing on Muscle Strength and Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 95,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Can I build muscle on a calorie deficit?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, you can build muscle even when you're eating fewer calories than you burn, especially if you're new to resistance training [1], [2]. Muscle mass is key for overall health and performance [1]. A study showed that combining a high-intensity resistance training program with protein supplements led to a significant increase in lean body mass [3]. So, focus on resistance training and consider adding protein to your diet to help build muscle [3], [2].",
+    "answer_length": 454,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      },
+      {
+        "index": 2,
+        "study_id": 43,
+        "title": "Dose–Response Relationship Between Protein Intake and Muscle Mass Increase: A Systematic Review and Meta-Analysis of Randomized Controlled Trials"
+      },
+      {
+        "index": 3,
+        "study_id": 82,
+        "title": "High-Intensity Resistance Exercise Training to Improve Body Composition and Strength in Older Men With Osteosarcopenia (FrOST)"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 43,
+        "title": "Dose–Response Relationship Between Protein Intake and Muscle Mass Increase: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 82,
+        "title": "High-Intensity Resistance Exercise Training to Improve Body Composition and Strength in Older Men With Osteosarcopenia (FrOST)",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can I build muscle on a calorie deficit?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, you can build muscle on a calorie deficit, especially with resistance training and adequate protein intake. Here's a breakdown of how it works, based on the provided studies: **Mechanisms and Key Findings:** * **Importance of Muscle Mass:** Muscle mass is crucial for overall health, playing a vital role in energy intake control, thermogenesis, resting metabolic rate, and combating obesity [1], [2], [3]. It's also linked to cardiometabolic health and reduced risk of various complications [1].\n* **Resistance Training and Protein:** Resistance training facilitates muscle protein synthesis, and protein intake provides the necessary building blocks for muscle hypertrophy [3].\n* **High-Intensity Resistance Training (HIT-RT):** A study demonstrated that a high-intensity resistance training protocol (HIT-RT) combined with whey protein supplementation led to a significant 3.3% net gain (1.45 kg) in lean body mass in older men [1]. This suggests that even in conditions where muscle growth might be challenging (older adults), a well-designed program can be effective.\n* **Protein Supplementation:** Studies suggest that protein supplementation can augment the effects of resistance training on lean body mass [1]. A meta",
+    "answer_length": 1230,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 82,
+        "title": "High-Intensity Resistance Exercise Training to Improve Body Composition and Strength in Older Men With Osteosarcopenia (FrOST)"
+      },
+      {
+        "index": 2,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      },
+      {
+        "index": 3,
+        "study_id": 43,
+        "title": "Dose–Response Relationship Between Protein Intake and Muscle Mass Increase: A Systematic Review and Meta-Analysis of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 43,
+        "title": "Dose–Response Relationship Between Protein Intake and Muscle Mass Increase: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 82,
+        "title": "High-Intensity Resistance Exercise Training to Improve Body Composition and Strength in Older Men With Osteosarcopenia (FrOST)",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does casein protein before bed improve muscle gain?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information about the effects of casein protein before bed on muscle gain. Therefore, I cannot answer your question.",
+    "answer_length": 168,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 84,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Does casein protein before bed improve muscle gain?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information about the effects of casein protein before bed on muscle gain. Therefore, I cannot answer your question.",
+    "answer_length": 168,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 84,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is full-body training better than a bro split for muscle growth?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For beginners, it's good to know that training each muscle group at least twice a week can help maximize muscle growth [1]. While the typical \"bro split\" (training each muscle group once or twice a week) can still work, training each muscle group more frequently might be slightly better [1]. However, remember that the total amount of work you do each week is key, so a split routine can be effective if it allows you to do more total volume over time [1]. Also, using a full range of motion (ROM) during exercises can help maximize muscle strength and growth in the lower body [2]. Full ROM resistance training may also improve overall strength, speed, power, muscle size, and body composition [3].",
+    "answer_length": 700,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 33,
+        "title": "Effects of Range of Motion on Resistance Training Adaptations: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 4,
+        "title": "Partial Vs Full Range of Motion Resistance Training: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 4,
+        "title": "Partial Vs Full Range of Motion Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 33,
+        "title": "Effects of Range of Motion on Resistance Training Adaptations: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is full-body training better than a bro split for muscle growth?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the available evidence, training each muscle group at least twice a week appears to promote superior hypertrophic outcomes compared to training it only once a week [1]. This suggests that full-body training, which inherently involves hitting each muscle group more frequently, *can* be more effective than a traditional \"bro split\" where each muscle group is trained only once per week [1]. However, it's important to consider the nuances. The key factor seems to be weekly training volume. A \"bro split\" *could* be effective if it allows for a higher overall training volume per muscle group while maintaining intensity and providing adequate recovery [1]. The study [1] specifically notes that their results favoring higher frequency are specific to protocols equating total weekly training volume. If a split routine allows you to perform more total sets per muscle group over time, it might still be a viable strategy [1]. Furthermore, the study [1] indicates that training a muscle group three times per week may or may not be superior to twice per week, and there's a lack of data on training a muscle group more than three times per week. Preliminary evidence suggests very high frequencies *might* be beneficial for experienced lifters, but more research is needed [1]. Also,",
+    "answer_length": 1292,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How many times per week should I train each muscle group?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For the best muscle growth, aim to train each major muscle group at least twice a week [1]. Research shows that training a muscle group twice a week leads to better gains compared to training it only once a week [1], [2]. While it's not clear if training more than three times a week is even better, starting with two sessions per muscle group is a solid, evidence-based approach [1].",
+    "answer_length": 384,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "How many times per week should I train each muscle group?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "To maximize muscle growth, you should train each major muscle group at least twice a week [1]. Research indicates that training a muscle group twice a week leads to greater muscle growth compared to training it only once a week [1], [2]. While training a muscle group twice a week is superior to once a week, whether training three times a week is even better is still undetermined [1]. Some research suggests a trend favoring training three days per week, but the evidence is not conclusive [3]. There is a lack of data on training muscle groups more than three days per week [1]. One study showed preliminary evidence that elite powerlifters experienced greater muscular adaptations when total training volume was divided over six weekly training sessions compared to three, but this study is not yet published [3]. Consider periodizing your training frequency over a training cycle and including deloading periods to avoid overtraining [1], [3]. The effectiveness of split routines with reduced weekly training frequencies per muscle group in enhancing hypertrophic increases by allowing for the use of higher volumes over time remains to be determined [3].",
+    "answer_length": 1160,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency"
+      },
+      {
+        "index": 3,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is push–pull–legs a good split for intermediates?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "While the push-pull-legs split isn't specifically addressed for intermediates, research suggests some insights. Training each muscle group at least twice a week can maximize muscle growth [1]. A push-pull-legs split might have you training each muscle group only once a week, which may not be optimal [1]. However, training a muscle group once a week can still promote muscle growth [1]. If you do a push-pull-legs split, consider increasing the frequency to twice a week for each muscle group if your goal is to maximize muscle growth [1].",
+    "answer_length": 540,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 89,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is push–pull–legs a good split for intermediates?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the current evidence, a push-pull-legs split can be a viable option for intermediate lifters, but optimizing training frequency may lead to better results [1]. Here's a breakdown: **Frequency and Hypertrophy:** * Training a muscle group at least twice a week appears to promote superior hypertrophic outcomes compared to once a week [2].\n* It is not clear whether training a muscle group three times per week is superior to twice per week [2].\n* Higher training frequencies (2-3 times per week) on a volume-equated basis show a hypertrophic advantage [1]. Effect sizes were small to medium, with higher frequency groups bordering on a medium effect [2]. **Push-Pull-Legs and Frequency:** * A traditional push-pull-legs split, done once per week, might not be optimal for muscle growth compared to higher frequencies [2].\n* To take advantage of the potential benefits of higher frequency, you could modify a push-pull-legs split to train each muscle group twice per week. For example, performing the split twice over two weeks. **Volume Considerations:** * The benefits of higher frequency are specific to protocols equating total weekly training",
+    "answer_length": 1154,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 89,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can I make progress training each muscle only once per week?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, you can still make progress training each muscle group once a week [1]. However, to maximize muscle growth, aim to train major muscle groups at least twice a week [2]. Research indicates that training a muscle group twice a week leads to greater muscle growth compared to training it only once a week [3]. While training once a week can still lead to robust muscle growth, training twice a week is better [1].",
+    "answer_length": 414,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Can I make progress training each muscle only once per week?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, you can still make progress training each muscle group once per week, although training a muscle group twice a week promotes superior hypertrophic outcomes [1]. Here's a more detailed explanation: **Frequency and Hypertrophy:** * **General Recommendation:** To maximize muscle growth, it's generally recommended to train major muscle groups at least twice a week [2].\n* **Once vs. Twice per Week:** Research indicates that training a muscle group twice per week leads to greater increases in muscle size compared to training it only once per week [3], [1].\n* **Volume-Equated Studies:** These findings are based on studies that equated total weekly training volume [2], [1]. This means that the total amount of work (sets x reps x weight) was the same, regardless of whether it was spread out over one or multiple sessions.\n* **Effect Size:** While higher training frequencies (2x/week) show a positive effect, the absolute difference in hypertrophy might be modest [1]. One study noted a ~8% difference in lean body mass when training 3 days per week compared to 1 day per week, although this difference was not statistically significant [1]. **Practical Implications and Considerations:**",
+    "answer_length": 1195,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is it okay to train with sore muscles?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "When you're new to resistance training, it's common to experience muscle soreness, also known as exercise-induced muscle damage (EIMD) [1], [2]. Symptoms of EIMD include impaired force-generating capacity and delayed onset muscle soreness (DOMS) [1]. Creatine supplementation may help attenuate muscle damage markers as an acute response to exercise [2]. While some studies suggest creatine can help with recovery by potentially reducing inflammation and oxidative stress [1], [2], others show conflicting results [1]. If you're experiencing muscle soreness, it's essential to listen to your body. If the soreness is mild, light activity might help, but if it's severe, rest is crucial to prevent further injury [1], [2].",
+    "answer_length": 721,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is it okay to train with sore muscles?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Training with sore muscles is a complex issue, and the decision depends on several factors related to exercise-induced muscle damage (EIMD) [1], [2]. EIMD results from unaccustomed or strenuous exercise, especially eccentric contractions, leading to symptoms like impaired force-generating capacity, delayed onset muscle soreness (DOMS), and restricted range of motion [1], [2]. **Mechanisms of EIMD and Creatine's Potential Role:**\nCreatine supplementation may play a role in mitigating EIMD by increasing muscle phosphocreatine stores, which could preserve intramuscular Ca2+ homeostasis, stabilize muscle membranes, and reduce inflammation and oxidative stress [1]. However, studies on creatine's effects on EIMD have yielded mixed results [1]. **Conflicting Evidence and Training Considerations:**\nSome studies suggest creatine can attenuate markers of EIMD, like creatine kinase (CK) and muscle soreness, while others show no benefit [1]. Interestingly, creatine might minimize EIMD following a single bout of unfamiliar exercises, but this effect could be reversed with longer-term supplementation as part of a training program [2]. This could be because the increased work capacity from creatine leads to faster progression in training intensity, increasing acute physiological stress",
+    "answer_length": 1291,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How many sets per week should I do for hypertrophy?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For muscle growth (hypertrophy), aim for a weekly range of 12-20 sets per muscle group [1]. You should train each major muscle group at least twice a week to maximize growth [2]. Doing too many sets per workout can negatively affect muscle gain [3].",
+    "answer_length": 249,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy"
+      },
+      {
+        "index": 2,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "How many sets per week should I do for hypertrophy?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "For optimizing muscle hypertrophy, a range of 12-20 weekly sets per muscle group is generally recommended for trained individuals [1]. This recommendation is based on studies that compared different training volumes, typically performed to muscular failure [1]. To maximize muscle growth, aim to train major muscle groups at least twice a week [2]. Training each muscle group twice per week within the 12-20 set range appears to be an optimum strategy [1]. Increasing training frequency may allow for even greater total training volume [1]. Be cautious of overtraining when using high training frequencies, and consider periodizing training frequency over a training cycle [2]. Also, excessive sets per workout may negatively affect muscle mass gain [3]. For the triceps brachii, volumes higher than 20 weekly sets may be more effective, but this includes volume from multi-joint exercises [1]. Therefore, 12-20 weekly sets of direct triceps work may be optimum, and increasing training frequency can help manage the higher volume [1].",
+    "answer_length": 1035,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy"
+      },
+      {
+        "index": 2,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is training to failure necessary for muscle growth?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Good news, as a beginner, you don't always need to push yourself to complete muscle failure to see muscle growth [1], [2]. Studies show that training to the point where you can't do another rep (momentary muscular failure) isn't necessarily better than stopping just before that point [1]. It seems like there's a sweet spot, and pushing too hard might not always lead to more gains [1].",
+    "answer_length": 387,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is training to failure necessary for muscle growth?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the available evidence, training to momentary muscular failure is not superior to non-failure resistance training for muscle hypertrophy [1], [2]. Higher velocity loss thresholds, which theoretically indicate closer proximity to failure, do not always elicit greater muscle hypertrophy [1]. This suggests a potential non-linear relationship between proximity-to-failure and muscle hypertrophy [1]. The current methods of set termination during non-failure resistance training make it challenging to determine the actual proximity-to-failure achieved, which limits the ability to provide practical recommendations for manipulating proximity-to-failure to optimize muscle growth [1]. The research indicates that there is no moderating effect of either volume load or relative load on muscle hypertrophy when resistance training was performed using any definition of set failure versus non-failure [1].",
+    "answer_length": 908,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "low"
+    }
+  },
+  {
+    "query": "What rep ranges are best for hypertrophy?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not mention specific rep ranges for hypertrophy. The studies focus on comparing the effects of different set volumes on muscle growth [1], [2]. One study suggests that a range of 12-20 weekly sets per muscle group may be an optimum standard recommendation for increasing muscle hypertrophy [1].",
+    "answer_length": 334,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy"
+      },
+      {
+        "index": 2,
+        "study_id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "What rep ranges are best for hypertrophy?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not discuss rep ranges for hypertrophy. Therefore, I cannot answer your question.",
+    "answer_length": 121,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is high volume better than low volume for strength?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For beginners, a lower volume of resistance training can still lead to improvements in physical function, muscle size, and lean mass [1]. However, if your main goal is to increase strength, especially as you become more experienced, a higher volume of resistance training might be necessary to achieve greater strength improvements [1]. Keep in mind that periodized resistance training may have a greater effect on maximal strength compared to non-periodized resistance training [2].",
+    "answer_length": 483,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 83,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is high volume better than low volume for strength?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "For trained individuals, higher volume resistance training may be necessary for achieving greater improvements in muscle strength [1]. When volume is equated, periodized resistance training, particularly undulating periodization (UP), has a greater effect on 1RM strength compared to non-periodized (NP) resistance training [2]. However, this benefit of UP over low-volume periodization (LP) is primarily observed in trained individuals, suggesting that they benefit from daily or weekly undulations in volume and intensity when the goal is maximal strength [2]. The effects of periodization on maximal strength may be related to neurophysiological adaptations accompanying resistance training [2]. While one study indicated that higher training volumes lead to greater strength increases, the data did not consistently support this conclusion [3].",
+    "answer_length": 848,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 108,
+        "title": "Challenging the American College of Sports Medicine 2009 Position Stand on Resistance Training"
+      }
+    ],
+    "studies": [
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 108,
+        "title": "Challenging the American College of Sports Medicine 2009 Position Stand on Resistance Training",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 83,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How much rest should I take between sets for hypertrophy?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but none of the provided studies discuss rest times between sets for hypertrophy. Therefore, I cannot answer your question.",
+    "answer_length": 135,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 96,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How much rest should I take between sets for hypertrophy?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Unfortunately, the provided studies do not directly address the question of optimal rest times between sets for hypertrophy. However, they do offer insights into training volume and frequency that can help inform your training decisions. Based on the research, a range of 12-20 weekly sets per muscle group is an optimum standard recommendation for increasing muscle hypertrophy in young, trained men [1], [2]. For the triceps brachii, training volumes higher than 20 weekly sets seem to be more effective for muscle gains [2]. When considering volume for the triceps, remember to include volume from multi-joint exercises [2]. While the studies don't specify rest times, understanding the volume recommendations can help you structure your workouts. You can adjust rest times to manage fatigue and ensure you're able to complete the recommended number of sets with good form.",
+    "answer_length": 876,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy"
+      },
+      {
+        "index": 2,
+        "study_id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy"
+      }
+    ],
+    "studies": [
+      {
+        "id": 28,
+        "title": "A Systematic Review of the Effects of Different Resistance Training Volumes on Muscle Hypertrophy",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 96,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are compound lifts enough to build all major muscle groups?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information about compound lifts or whether they are sufficient to build all major muscle groups. Therefore, I cannot answer your question.",
+    "answer_length": 191,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 89,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are compound lifts enough to build all major muscle groups?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the current evidence, compound lifts may not be enough to maximize muscle growth in all major muscle groups [1]. To maximize muscle growth, major muscle groups should be trained at least twice a week [1]. While compound exercises engage multiple muscle groups simultaneously, they might not provide sufficient stimulus for each individual muscle to optimize hypertrophy [2]. To ensure balanced development, consider incorporating isolation exercises that specifically target individual muscles or muscle groups that may be lagging [2]. This approach allows for a more comprehensive training stimulus, potentially leading to greater overall muscle growth [1], [2].",
+    "answer_length": 672,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 89,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are machines as effective as free weights for building muscle?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For beginners, both free weights and machines can be effective for building muscle . One study showed that previously untrained females experienced similar decreases in body fat regardless of whether they used free weights, Nautilus machines, or Soloflex machines [1]. Another study found that free weights and Nautilus machines were equally effective for developing muscular strength and endurance in college students . However, it's worth noting that strength gains might be greater when tested on the specific equipment used for training [1]. Also, excessive sets per workout negatively affect muscle mass gain [2]. A study on obese African American perimenopausal women showed no significant difference between using weights (dumbbells, barbells, machines, resistance bands) and body weight for resistance training [3].",
+    "answer_length": 823,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols"
+      },
+      {
+        "index": 2,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      },
+      {
+        "index": 3,
+        "study_id": 91,
+        "title": "Body Composition and Musculoskeletal Health in Older Adults With Obesity and Sarcopenia (Liberty University Thesis)"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 91,
+        "title": "Body Composition and Musculoskeletal Health in Older Adults With Obesity and Sarcopenia (Liberty University Thesis)",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 90,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are machines as effective as free weights for building muscle?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "The research suggests that both free weights and machines can be effective for building muscle, but there are nuances to consider [1], [2]. **Evidence from Studies:** * **Comparable Muscle Growth:** One study found that free weights, Nautilus machines, and Soloflex machines produced comparable changes in muscular strength and body composition in previously untrained females [1]. Another study on college students found free weights and Nautilus machines to be equally effective for developing muscular strength and endurance [1]. A meta-analysis also showed resistance training to have a significant effect on hypertrophy [2].\n* **Specificity of Strength Gains:** The study on previously untrained females also indicated that strength gains were greater when individuals were tested on the equipment they trained with [1]. For example, the free-weight group showed greater gains on free-weight exercises like bench press, while the Nautilus group showed greater gains on Nautilus machine exercises [1].\n* **Body Fat Reduction:** The study on previously untrained females showed significant pre- to post-training decreases in thigh, arm, and iliac skin-folds, and percent body fat for all groups (free-weight, Nautilus, and Soloflex), with no significant difference between the groups for any anthropometric variable [1].\n*",
+    "answer_length": 1325,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols"
+      },
+      {
+        "index": 2,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 90,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does squat depth affect hypertrophy and strength gains?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information about the effect of squat depth on hypertrophy and strength gains. Therefore, I cannot answer your question.",
+    "answer_length": 172,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does squat depth affect hypertrophy and strength gains?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the documents provided do not contain information about the effect of squat depth on hypertrophy and strength gains. Therefore, I cannot answer the question.",
+    "answer_length": 173,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are deadlifts necessary for building a strong back?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Based on the research, using higher loads during resistance training leads to greater strength gains [2, 3]. Studies have shown that training with high loads is more effective for increasing 1RM strength compared to using lighter loads [1]. While the provided studies don't focus specifically on deadlifts, they suggest that to build a strong back, you should focus on lifting heavier weights (high load) during your resistance training [2, 3].",
+    "answer_length": 444,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 73,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Are deadlifts necessary for building a strong back?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the research, high-load resistance training is generally superior for strength gains [1], [2], [3]. Specifically, studies comparing different training loads while matching volume load indicate that higher loads induce superior dynamic strength gains [2]. While the provided studies do not directly address deadlifts, they do show that high-load training is more effective for increasing 1RM strength [2], [3]. Since deadlifts are typically performed with high loads, they can be an effective exercise for building overall strength, which would include the back muscles. The meta-analysis showed that training with higher loads leads to better 1RM strength improvements compared to lighter loads [2]. This suggests that incorporating heavy compound exercises like deadlifts can be beneficial for maximizing strength gains in the back.",
+    "answer_length": 842,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 7,
+        "title": "Resistance Training Load Effects on Muscle Hypertrophy and Strength Gain: Systematic Review and Network Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 7,
+        "title": "Resistance Training Load Effects on Muscle Hypertrophy and Strength Gain: Systematic Review and Network Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 73,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is it better to do barbell bench press or dumbbell bench press?",
+    "mode": "beginner",
+    "backend": "llm",
+    "ok": false,
+    "error": "{\"detail\":\"LLM backend error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}\"}",
+    "status_code": 502
+  },
+  {
+    "query": "Is it better to do barbell bench press or dumbbell bench press?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "While [1] did not assess barbell vs. dumbbell bench press, [2] mentions that the exercises that were performed with the Smith machine were squats, deadlifts, calf raises, bench press, and shoulder press. It is important to consider the benefits of each exercise when deciding which one to incorporate into your workout routine. Here's a breakdown: * **Barbell Bench Press:** This exercise allows for heavier loading, potentially leading to greater strength gains [2]. It engages more muscle mass due to the need for greater stabilization [2].\n* **Dumbbell Bench Press:** This variation can improve range of motion and address strength imbalances, as each arm works independently [2]. It also requires more stabilization than the barbell bench press, further activating stabilizing muscles [2]. Ultimately, the \"better\" exercise depends on your specific goals and needs. If your primary goal is to lift the heaviest weight possible, the barbell bench press might be more suitable [2]. If you're looking to improve stability, range of motion, and address imbalances, the dumbbell bench press could be a better choice [2].",
+    "answer_length": 1119,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 67,
+        "title": "Impact of Creatine Supplementation in Combination with Resistance Training on Lean Mass in the Elderly"
+      },
+      {
+        "index": 2,
+        "study_id": 91,
+        "title": "Body Composition and Musculoskeletal Health in Older Adults With Obesity and Sarcopenia (Liberty University Thesis)"
+      }
+    ],
+    "studies": [
+      {
+        "id": 67,
+        "title": "Impact of Creatine Supplementation in Combination with Resistance Training on Lean Mass in the Elderly",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 91,
+        "title": "Body Composition and Musculoskeletal Health in Older Adults With Obesity and Sarcopenia (Liberty University Thesis)",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "What is progressive overload and how fast should I add weight?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but none of the provided studies discuss progressive overload or how quickly to add weight.",
+    "answer_length": 103,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "What is progressive overload and how fast should I add weight?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Progressive overload is a fundamental principle in strength training, essential for continued strength and muscle growth. While the provided studies do not directly define progressive overload, they offer insights into its application, especially in the context of load and volume. Study [1] indicates that higher loads elicit greater gains in 1RM muscle strength when volume load is equated between conditions. This suggests that increasing the weight you lift over time is crucial for strength improvements. However, the same study also notes that muscle hypertrophy is similar irrespective of the magnitude of load, provided volume load is equated [1]. This implies that while increasing weight is important for strength, maintaining or increasing volume (sets x reps) is key for muscle growth. Study [2] emphasizes the importance of muscle-strengthening activities for older adults, recommending resistance training of moderate intensity. It suggests performing at least one set of 8-10 exercises that train the major muscle groups on two or three nonconsecutive days each week. For older adults, experts recommend 10-15 repetitions per set [2]. Study [3] highlights the importance of resistance training for obese older adults to increase lean body mass and decrease fat mass. It notes that the literature on how best to incorporate resistance training into weight loss programs",
+    "answer_length": 1383,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 114,
+        "title": "Physical Activity and Public Health in Older Adults: Recommendation from the American College of Sports Medicine and the American Heart Association"
+      },
+      {
+        "index": 3,
+        "study_id": 98,
+        "title": "Resistance Training and Weight Loss in Older Adults: A Scoping Review"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 98,
+        "title": "Resistance Training and Weight Loss in Older Adults: A Scoping Review",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 114,
+        "title": "Physical Activity and Public Health in Older Adults: Recommendation from the American College of Sports Medicine and the American Heart Association",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is linear periodisation effective for intermediates?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Periodized resistance training, which involves organizing your training into phases, is generally considered better than non-periodized training for increasing strength [1]. However, research is still exploring how to best use periodization to maximize strength and muscle growth [2]. More research is needed to determine if linear periodization is more effective than other forms of periodization [3].",
+    "answer_length": 402,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 3,
+        "title": "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 3,
+        "title": "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 92,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is linear periodisation effective for intermediates?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Periodized resistance training plans, including linear periodization, are generally considered more effective than non-periodized approaches for enhancing maximal strength [1]. Periodization involves organizing training into sequential phases and cyclical time periods to optimize performance gains and minimize overtraining [1]. While the excerpt does not provide a direct comparison of linear vs. undulating periodization, it does highlight the overall benefits of periodization [2], [1]. The effectiveness of periodization, including linear periodization, in promoting strength and muscle hypertrophy is an area of ongoing research [3].",
+    "answer_length": 639,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 3,
+        "title": "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 3,
+        "title": "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 92,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Do deload weeks improve strength and hypertrophy long term?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information on deload weeks and their long-term effects on strength and hypertrophy. Therefore, I cannot answer your question.",
+    "answer_length": 178,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Do deload weeks improve strength and hypertrophy long term?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information on deload weeks and their long-term effects on strength and hypertrophy. Therefore, I cannot answer your question. However, the studies do discuss other factors that influence strength and hypertrophy, such as load, training frequency, and sex [1], [2].",
+    "answer_length": 317,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 7,
+        "title": "Resistance Training Load Effects on Muscle Hypertrophy and Strength Gain: Systematic Review and Network Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 7,
+        "title": "Resistance Training Load Effects on Muscle Hypertrophy and Strength Gain: Systematic Review and Network Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Should I change my routine frequently to avoid plateaus?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not address the question of changing routines frequently to avoid plateaus. Therefore, I cannot provide an answer.",
+    "answer_length": 154,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 71,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Should I change my routine frequently to avoid plateaus?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "While the provided studies do not directly address the concept of \"changing routines frequently,\" they do offer insights into training frequency and program design that can help you avoid plateaus. Here's a breakdown: **Training Frequency and Hypertrophy:** * A meta-analysis found a hypertrophic advantage to training muscle groups more frequently, on a volume-equated basis [1]. Higher training frequencies resulted in both a larger effect size (0.49 ± 0.08 vs. 0.30 ± 0.07) and a greater mean percent change in muscle growth (6.8 ± 0.7 vs. 3.7 ± 0.5 %) compared to lower frequencies [1].\n* This suggests that instead of drastically changing your routine, consider adjusting the frequency with which you train each muscle group. **Practical Programming Guidance:** * **Increase Training Frequency:** If you're currently training each muscle group once per week (as is common among some bodybuilders), consider increasing the frequency to twice or even three times per week [1]. This can be achieved through full body workouts or split routines.\n* **Volume Equated Basis:** When increasing frequency, ensure that the total weekly volume",
+    "answer_length": 1137,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 71,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is daily undulating periodisation better than linear periodisation?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For strength gains, daily undulating periodization (UP) is more effective than linear periodization (LP), especially if you are already trained [1]. UP involves changing the volume and intensity of your workouts frequently (daily or weekly) [1]. However, both UP and LP result in similar muscle growth [1]. So, if your main goal is to get stronger, try UP, but remember that any form of periodization is better than not periodizing at all [1].",
+    "answer_length": 443,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is daily undulating periodisation better than linear periodisation?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, for trained individuals, daily undulating periodization (DUP) appears to be more effective for strength gains compared to linear periodization (LP) [1]. However, both DUP and LP seem to produce similar muscle hypertrophy [1]. **Mechanisms and Findings:**\n* **Strength:** Meta-analysis shows that undulating periodization promotes greater increases in strength (1RM) compared to linear periodization [1]. This effect is more pronounced in trained individuals, suggesting that as training progresses, more frequent variations in volume and intensity become desirable to maximize strength development [1]. The mechanisms behind this are likely neurophysiological adaptations, such as increased motor-unit recruitment and firing rates, rather than morphological adaptations like muscle hypertrophy [1].\n* **Hypertrophy:** The research indicates no significant differences in muscle hypertrophy between LP and UP [1]. This suggests that muscle growth, in response to resistance training, is not significantly affected by the differences in these periodization models [1]. **Practical Programming Guidance:**\n* **For Strength:** If your primary goal is to maximize strength, especially as a trained lifter, incorporate daily or weekly variations in volume and intensity [1]. This can be achieved through DUP strategies.\n* **Combining Periodization",
+    "answer_length": 1346,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can women build muscle as effectively as men with resistance training?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, women can build muscle and strength through resistance training [1]. Studies show that while men often increase absolute strength more than women, the relative increase in muscle strength and hypertrophy can be similar between the sexes [1]. In some cases, women have even shown a greater relative strength increase compared to men [1]. It's important to remember that men typically start with greater muscle size and strength [1].",
+    "answer_length": 436,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 72,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Can women build muscle as effectively as men with resistance training?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "While men typically exhibit greater absolute strength gains, women can experience similar or even greater relative increases in muscle strength and hypertrophy compared to men [1]. Several studies indicate that the relative increase in muscle strength and hypertrophy can be similar between sexes [1]. Some studies even suggest that females may have a greater relative strength increase [1]. Key factors to consider include pre-training levels of muscle size and strength, which are generally greater in males [1]. Hormonal differences between males and females may also influence muscle hypertrophy and strength adaptations [1]. Despite these differences, resistance training is an effective method for women to increase muscle size and strength [1].",
+    "answer_length": 751,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 72,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is resistance training safe for older adults?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, resistance training is recognized as a safe and effective way to counteract age-related declines in the nervous and musculoskeletal systems [1]. A low resistance training volume can substantially improve physical function and benefit lean mass and muscle size [2]. Weight loss alone appears to be an incomplete and problematic outcome measure for older adults, with changes in body composition (ratio of fat mass to lean mass) being the more appropriate variable to emphasize in this population [3].",
+    "answer_length": 504,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      },
+      {
+        "index": 3,
+        "study_id": 98,
+        "title": "Resistance Training and Weight Loss in Older Adults: A Scoping Review"
+      }
+    ],
+    "studies": [
+      {
+        "id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 98,
+        "title": "Resistance Training and Weight Loss in Older Adults: A Scoping Review",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 89,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is resistance training safe for older adults?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, resistance training is recognized as a safe and effective intervention to counteract age-related declines in the nervous and musculoskeletal systems [1]. Numerous resistance training programs, varying in duration, volume, and intensity, have been demonstrated to reduce the loss rate for lean mass, muscle strength, and physical function in healthy older adults to some extent [1]. A low resistance training volume can substantially improve healthy older adults’ physical function and benefits lean mass and muscle size independently of program duration [2]. A higher volume seems to be necessary for achieving greater improvements in muscle strength in older adults independently of program duration [2].",
+    "answer_length": 710,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 34,
+        "title": "Effects of Resistance Training Volume on Physical Function, Lean Body Mass and Lower-Body Muscle Hypertrophy and Strength in Older Adults: A Systematic Review and Network Meta-analysis of 151 Randomised Trials",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 89,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Does creatine help older adults maintain muscle mass?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, creatine supplementation can be beneficial for older adults looking to maintain or increase muscle mass and strength [1], [2]. Studies show that adding creatine to your exercise routine can significantly improve your 1RM test results and overall muscle strength [1]. In fact, one study found that creatine supplementation during a 10-week strength training program doubled muscle strength gains compared to just exercise alone [1]. Creatine helps by increasing energy in your muscles and promoting muscle recovery, allowing you to train harder and improve muscle adaptation [1]. Taking creatine after exercise may lead to greater increases in lean tissue mass [2].",
+    "answer_length": 669,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 61,
+        "title": "Impact of Creatine Supplementation and Exercise Training in Older Adults: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 66,
+        "title": "Strategic Creatine Supplementation and Resistance Training in Healthy Older Adults"
+      }
+    ],
+    "studies": [
+      {
+        "id": 61,
+        "title": "Impact of Creatine Supplementation and Exercise Training in Older Adults: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 66,
+        "title": "Strategic Creatine Supplementation and Resistance Training in Healthy Older Adults",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 79,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Does creatine help older adults maintain muscle mass?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, creatine supplementation can help older adults maintain and increase muscle mass and strength when combined with resistance training [1], [2]. **Mechanisms and Key Findings:** * **Increased Muscle Strength and Lean Mass:** Creatine supplementation, when combined with exercise training, significantly increases 1RM test results and muscle strength in older adults [1]. Studies have shown that creatine can double muscle strength gains compared to exercise alone [1]. It also increases lean tissue mass [1], [2].\n* **Meta-Analysis Support:** Meta-analyses confirm that creatine enhances strength training results by increasing total body mass, fat-free mass, and 1RM in exercises like chest press and leg press [1]. One meta-analysis reported an average increase of 1.37 kg in lean tissue mass in older adults who combined creatine with strength training (2-3 sessions/week for 7-52 weeks) [1].\n* **Muscle Hypertrophy and Energy Production:** Exercise training promotes muscle hypertrophy through various pathways, including growth hormone release, the IGF-1/Akt/mTOR pathway, and satellite cell activation [1]. Creatine amplifies these effects by increasing intramuscular phosphocreatine (PCr), which provides an energy",
+    "answer_length": 1224,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 61,
+        "title": "Impact of Creatine Supplementation and Exercise Training in Older Adults: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 66,
+        "title": "Strategic Creatine Supplementation and Resistance Training in Healthy Older Adults"
+      }
+    ],
+    "studies": [
+      {
+        "id": 61,
+        "title": "Impact of Creatine Supplementation and Exercise Training in Older Adults: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 66,
+        "title": "Strategic Creatine Supplementation and Resistance Training in Healthy Older Adults",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 79,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Is high-intensity resistance training safe for beginners?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "The provided studies focus on the effects of different resistance training periodization models on strength and muscle hypertrophy, and a critical analysis of resistance training recommendations [1], [2]. One study also mentions the safety of creatine for older adults [3]. However, these excerpts do not directly address the safety of high-intensity resistance training for beginners.",
+    "answer_length": 385,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols"
+      },
+      {
+        "index": 3,
+        "study_id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials"
+      }
+    ],
+    "studies": [
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 76,
+        "title": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 110,
+        "title": "A Critical Analysis of the ACSM Position Stand on Resistance Training: Insufficient Evidence to Support Recommended Training Protocols",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 67,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is high-intensity resistance training safe for beginners?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not address the safety of high-intensity resistance training for beginners. Therefore, I cannot answer your question.",
+    "answer_length": 157,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 67,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Does training in a fasted state affect muscle growth?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but none of the provided studies discuss whether training in a fasted state affects muscle growth. Therefore, I cannot answer your question.",
+    "answer_length": 152,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 100,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Does training in a fasted state affect muscle growth?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not contain information about the effect of training in a fasted state on muscle growth. Therefore, I cannot answer the question.",
+    "answer_length": 169,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 100,
+      "label": "low"
+    }
+  },
+  {
+    "query": "How much sleep do I need for optimal muscle growth?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but none of the provided studies discuss the effects of sleep on muscle growth. Therefore, I cannot answer your question.",
+    "answer_length": 133,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 76,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "How much sleep do I need for optimal muscle growth?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "I am sorry, but none of the provided studies discuss the effects of sleep on muscle growth. Therefore, I cannot answer your question.",
+    "answer_length": 133,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 76,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Does training to failure increase injury risk?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not mention injury risk. Therefore, I cannot answer your question.",
+    "answer_length": 106,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "Does training to failure increase injury risk?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "The provided studies do not directly address the question of whether training to failure increases injury risk [1], [2], [3]. The studies focus on the impact of training to failure versus not to failure on muscle hypertrophy [1], [2]. They do not include data or analysis related to injury incidence or risk factors [1], [2], [3].",
+    "answer_length": 330,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 13,
+        "title": "Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "medium"
+    }
+  },
+  {
+    "query": "How many rest days per week should I take?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For maximizing muscle growth, aim to train major muscle groups at least twice a week [1]. While it's not clear if training a muscle group three times a week is better than twice, training each muscle group twice a week is better than once a week [1]. Remember to listen to your body and consider periodizing your training frequency, including regular deloading periods, to avoid overtraining [1].",
+    "answer_length": 396,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How many rest days per week should I take?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the current evidence, it's generally recommended to train major muscle groups at least twice a week to maximize muscle growth [1]. However, the optimal number of rest days depends on how you structure your training frequency and volume [1], [2]. Here's a breakdown: * **Training Frequency and Hypertrophy:** Training a muscle group twice a week is superior for muscle growth compared to once a week [1], [3]. Whether training a muscle group three times per week is better than twice a week is still undetermined [1]. There is a lack of data on training muscle groups more than three days a week [1]. * **Volume-Equated Training:** The benefits of higher training frequencies are specific to protocols that equate total weekly training volume [3]. If you're using a split routine that allows for higher training volume per muscle group while maintaining intensity and recovery, lower weekly training frequencies per muscle group might still be effective [3]. * **Overtraining:** High training frequencies combined with high intensities can lead to overtraining [1], [3]. Periodizing training frequency and including deloading periods might help maximize gains while reducing the risk of overtraining [1], [3]. * **",
+    "answer_length": 1222,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency"
+      },
+      {
+        "index": 3,
+        "study_id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 6,
+        "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 10,
+        "title": "How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? A Systematic Review and Meta-analysis of Studies Examining the Effects of Resistance Training Frequency",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does active recovery speed up muscle recovery?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Creatine supplementation does not appear to accelerate recovery following exercise-induced muscle damage [1]. Several studies suggest that creatine monohydrate has limited benefits on recovery dynamics [2]. Therefore, based on current evidence, active recovery may not significantly speed up muscle recovery [1], [2]. More research may be needed to confirm these findings [1].",
+    "answer_length": 376,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Does active recovery speed up muscle recovery?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the provided study excerpts, creatine supplementation does not accelerate recovery following exercise-induced muscle damage (EIMD) [1]. A systematic review and meta-analysis indicated that the benefits of creatine monohydrate (CrM) on recovery dynamics are limited [2]. Therefore, active recovery is unlikely to speed up muscle recovery.",
+    "answer_length": 346,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials"
+      },
+      {
+        "index": 2,
+        "study_id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 59,
+        "title": "The Effect of Creatine Supplementation on Markers of Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Human Intervention Trials",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 75,
+        "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How does stress affect strength and hypertrophy?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "I am sorry, but the provided studies do not directly discuss the effects of stress on strength and hypertrophy. Therefore, I cannot answer your question.",
+    "answer_length": 153,
+    "num_citations": 0,
+    "citations": [],
+    "studies": [],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "How does stress affect strength and hypertrophy?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the provided studies, here's what we can infer about the effects of load (as a component of stress) on strength and hypertrophy: **Strength:** * Training with higher loads elicits greater gains in 1RM (one repetition maximum) muscle strength when compared to lower loads, even when volume load is equated between conditions [1]. This suggests that to maximize strength gains, prioritize heavier loads in your training. **Hypertrophy:** * Muscle hypertrophy is similar irrespective of the magnitude of load, even when volume load is equated between conditions [1]. This indicates that as long as you're performing the same amount of total work (sets x reps x weight), you can achieve similar muscle growth with a variety of load ranges.\n* It's important to consider different types of hypertrophy measurements separately (lean body mass, whole-muscle CSA, and muscle fiber CSA) because they may respond differently to resistance training interventions [2]. **Periodization:** * Periodization is often used in resistance training to promote the development of strength and muscle hypertrophy [3]. However, it remains unclear how resistance training variables are most effectively periodized to maximize gains in strength and muscle hypertrophy [3].",
+    "answer_length": 1255,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 16,
+        "title": "Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can I train for strength and hypertrophy at the same time?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, you can train for both strength and hypertrophy (muscle growth) at the same time [1]. Resistance training is known to improve strength and increase muscle size [1]. Studies show that muscle growth can be similar across a wide range of training loads [2, 1]. For strength, training with higher loads can lead to greater gains [2]. So, focus on lifting heavier weights for strength and maintaining consistent volume for hypertrophy [1, 2].",
+    "answer_length": 442,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Can I train for strength and hypertrophy at the same time?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, you can train for strength and hypertrophy simultaneously [1]. Research indicates that resistance training (RT) is effective for improving strength and inducing muscle hypertrophy [1]. **Hypertrophy:** Muscle hypertrophy is similar across a wide spectrum of loads, meaning you can achieve muscle growth with both higher and lower loads, especially when volume load is equated [2], [1]. Meta-analyses have shown comparable muscle hypertrophy with higher-load (>60% 1-RM) versus lower-load (≤60% 1-RM) RT [1]. **Strength:** Higher loads elicit greater gains in dynamic strength [2], [1]. Studies have shown superior dynamic 1-RM strength gain with higher-load (≤8-RM) and moderate-load (9-15-RM) RT compared to low-load RT (>15-RM) [1]. **Concurrent Training Considerations:** Be aware that concurrent training (combining RT with HIIT) might negatively impact lower body strength gains compared to RT alone [3]. If you incorporate HIIT, running-based HIIT may be better than cycling HIIT to mitigate negative effects on lower body strength [3]. Ensure adequate rest between HIIT and RT sessions [3].",
+    "answer_length": 1102,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 15,
+        "title": "The Compatibility of Concurrent High Intensity Interval Training and Resistance Training for Muscular Strength and Hypertrophy: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 15,
+        "title": "The Compatibility of Concurrent High Intensity Interval Training and Resistance Training for Muscular Strength and Hypertrophy: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "low"
+    }
+  },
+  {
+    "query": "Is low-rep high-weight training better for strength?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, lifting heavier weights (high-load resistance training, greater than 60% of your 1-RM) with fewer reps is generally better for increasing your maximum strength [1], [2]. Studies show that high-load resistance training promotes greater gains in dynamic and isometric strength compared to lighter loads [3], [2]. So, if your main goal is to get stronger, focus on lifting heavier.",
+    "answer_length": 383,
+    "num_citations": 3,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 9,
+        "title": "Strength and Hypertrophy Adaptations Between Low- vs. High-Load Resistance Training: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis"
+      },
+      {
+        "index": 3,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 9,
+        "title": "Strength and Hypertrophy Adaptations Between Low- vs. High-Load Resistance Training: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 30,
+        "title": "Influence of Resistance Training Load on Measures of Skeletal Muscle Hypertrophy and Improvements in Maximal Strength and Neuromuscular Task Performance: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Is low-rep high-weight training better for strength?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, based on the research, high-load resistance training (HL ≥ 80% of 1RM, or ≤ 7 RM) is generally better for developing dynamic strength [1, 2, 717-721]. Studies show that high-load training leads to significantly greater gains in 1RM strength compared to low-load (LL 30%-59% of 1RM, or 16–35 RM) and moderate-load (ML 60%-79% of 1RM, or 8 -15RM) resistance training [1]. The advantage of higher-load resistance training for improving dynamic strength (1RM) is more evident in untrained and younger participants [721-723]. While motor learning contributes to strength development, higher-load resistance training is still optimal for strength development [678-688]. Task specificity is crucial, so exercises should be specific to the strength measure used [674-677]. For example, if you're aiming to improve your 1RM squat, focus on heavy squats. For maximizing strength gains, especially in dynamic movements, prioritize higher-load resistance training (above 6",
+    "answer_length": 965,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 8,
+        "title": "Muscle Hypertrophy and Strength Gains After Resistance Training with Different Volume-Matched Loads: A Systematic Review and Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can I gain strength without gaining much muscle mass?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "The research indicates that resistance training (RT) does lead to muscle growth, with an average increase of about 1.5 kg in muscle mass [1]. However, the extent to which you gain muscle mass can be influenced by your training program [2]. It's worth noting that excessive sets per workout may negatively affect muscle mass gain [1].",
+    "answer_length": 333,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      },
+      {
+        "index": 2,
+        "study_id": 68,
+        "title": "Creatine Supplementation During Resistance Training on Lean Tissue Mass and Muscular Strength in Older Adults: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 68,
+        "title": "Creatine Supplementation During Resistance Training on Lean Tissue Mass and Muscular Strength in Older Adults: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Can I gain strength without gaining much muscle mass?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Based on the available research, it's difficult to determine the specific training factors that isolate strength gains without significant hypertrophy [1]. However, resistance training (RT) generally leads to hypertrophy, with studies showing a significant effect on muscle mass improvement (approximately 1.5 kg) [2]. It's also worth noting that excessive sets per workout may negatively affect muscle mass gain [2]. While the studies provided don't directly address how to maximize strength gains while minimizing hypertrophy, the information suggests that manipulating training volume (specifically, avoiding excessive sets) could be a factor to consider [2]. Further research is needed to quantify the impact of specific strength training programs on isolated strength gains without muscle hypertrophy, while accounting for factors like age and resistance training experience [1].",
+    "answer_length": 884,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      },
+      {
+        "index": 2,
+        "study_id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males"
+      }
+    ],
+    "studies": [
+      {
+        "id": 2,
+        "title": "A Systematic Review with Meta-Analysis of the Effect of Resistance Training on Whole-Body Muscle Growth in Healthy Adult Males",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 100,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are strength gains mostly neural at the beginning of training?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "Yes, strength gains at the beginning of resistance training are primarily due to neurological adaptations [1]. Initial improvements in strength seem to result mainly from these neurological adaptations, while subsequent gains are primarily the result of muscular adaptations [1].",
+    "answer_length": 279,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 98,
+      "label": "high"
+    }
+  },
+  {
+    "query": "Are strength gains mostly neural at the beginning of training?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "Yes, initial strength improvements during resistance training (RT) are primarily due to neurological adaptations [1]. Muscular adaptations become the primary driver of strength gains later in the training process [1]. One of the first studies comparing untrained males and females found that strength was similar when normalized to body weight after 10 weeks of intensive RT [1]. Neurological adaptations play a crucial role in the early phases of strength training [1], [2]. These adaptations involve improved motor unit recruitment, increased firing rates, and better synchronization of muscle activation [1]. Studies have shown that males are no better able to activate motor units than females [1]. Neuromuscular fatigue from RT is generally greater in males than females, and acute recovery may be slower in males [1]. The average untrained female may also have a lower initial level of fitness compared with a male [1]. This could cause a ceiling effect for motor skills that may explain differences in upper-body strength because the studies were conducted in mostly untrained subjects [1]. As training progresses, muscular adaptations such as hypertrophy (muscle growth) become more significant [1], [2]. While neurological adaptations contribute to early gains, the long-term potential for strength development relies on increasing muscle size [1]. It's important to",
+    "answer_length": 1375,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 24,
+        "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 98,
+      "label": "high"
+    }
+  },
+  {
+    "query": "What is the minimum effective dose for hypertrophy?",
+    "mode": "beginner",
+    "backend": "llm",
+    "answer": "For muscle growth (hypertrophy), research indicates that resistance training (RT) with multiple sets and at least two sessions per week is effective [1]. All combinations of loads, sets, and frequency increased muscle size compared to not exercising [1]. You can be confident that all RT exercises increased hypertrophy compared to no exercise [1].",
+    "answer_length": 348,
+    "num_citations": 1,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 12,
+        "title": "Resistance Training Prescription for Muscle Strength and Hypertrophy in Healthy Adults: A Systematic Review and Bayesian Network Meta-analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 12,
+        "title": "Resistance Training Prescription for Muscle Strength and Hypertrophy in Healthy Adults: A Systematic Review and Bayesian Network Meta-analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  },
+  {
+    "query": "What is the minimum effective dose for hypertrophy?",
+    "mode": "intermediate",
+    "backend": "llm",
+    "answer": "To maximize muscle hypertrophy, aim for at least two sets per exercise and two sessions per week [1]. **More Detailed Explanation** Research indicates that resistance training (RT) with multiple sets is associated with greater hypertrophy compared to single sets [2], [1]. While various RT prescriptions can lead to beneficial skeletal muscle adaptations, the key factor for hypertrophy appears to be performing at least two sets and two sessions per week [1]. 1. **Minimum Effective Dose:** The analysis suggests a minimum effective dose for hypertrophy is training with at least two sets per exercise and at least two sessions per week [1].\n2. **Load and Hypertrophy:** All RT prescriptions may comparably promote muscle hypertrophy, and the influence of load was less apparent [1].",
+    "answer_length": 784,
+    "num_citations": 2,
+    "citations": [
+      {
+        "index": 1,
+        "study_id": 12,
+        "title": "Resistance Training Prescription for Muscle Strength and Hypertrophy in Healthy Adults: A Systematic Review and Bayesian Network Meta-analysis"
+      },
+      {
+        "index": 2,
+        "study_id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis"
+      }
+    ],
+    "studies": [
+      {
+        "id": 12,
+        "title": "Resistance Training Prescription for Muscle Strength and Hypertrophy in Healthy Adults: A Systematic Review and Bayesian Network Meta-analysis",
+        "source": null,
+        "metadata": {}
+      },
+      {
+        "id": 29,
+        "title": "Single vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis",
+        "source": null,
+        "metadata": {}
+      }
+    ],
+    "confidence": {
+      "value": 85,
+      "label": "high"
+    }
+  }
+]

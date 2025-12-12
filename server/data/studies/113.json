@@ -1,0 +1,32 @@
+{
+  "id": 113,
+  "title": "Progression Models in Resistance Training for Healthy Adults (ACSM Position Stand)",
+  "authors": "Kraemer WJ; Adams K; Cafarelli E; Dudley GA; Dooly C; Feigenbaum MS; Fleck SJ; Franklin B; Fry AC; Hoffman JR; Newton RU; Potteiger J; Ratamess NA; et al.",
+  "year": 2002,
+  "doi": "10.1097/00005768-200202000-00026",
+  "journal": null,
+  "rating": 4.0,
+  "tags": [
+    "resistance_training",
+    "progression_models",
+    "load",
+    "volume",
+    "frequency",
+    "periodization",
+    "sets",
+    "repetition_range",
+    "rest_intervals",
+    "healthy_adults"
+  ],
+  "population": {
+    "training_status": "position_stand_RT (ACSM; progression models)"
+  },
+  "sections": {
+    "body": ""
+  },
+  "outcomes": {
+    "primary_human": "hypothetical training_effects (strength; hypertrophy; power; endurance – guidance only)"
+  },
+  "bucket": "D",
+  "notes": "Key ACSM RT position stand outlining progression models for novice, intermediate, advanced, and elite healthy adults; recommends multi-set training, specific %1RM/repetition ranges, periodized progression, and higher volumes/frequencies for advanced trainees—this is the document critiqued by Carpinelli (110, 108)."
+}

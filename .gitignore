@@ -18,7 +18,7 @@ data/**/*.json
 
 # Model / training directories
 model_lora/
-models/
+models/e
 checkpoints/
 outputs/
 runs/
@@ -26,3 +26,7 @@ logs/
 
 # PDFs
 *.pdf
+
+# Environment
+*.env
+node_modules
