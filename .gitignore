@@ -30,3 +30,4 @@ logs/
 # Environment
 *.env
 node_modules
+src/assets/movie.mp4
