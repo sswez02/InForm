@@ -41,7 +41,8 @@ export default function App() {
     setIsThinking(true);
 
     try {
-      const res = await fetch('http://localhost:8000/ask', {
+      const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000';
+      const res = await fetch(`${API_BASE}/ask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
