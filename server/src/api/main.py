@@ -43,11 +43,6 @@ retriever.add_passages(passages)
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-001")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 
-llm = OpenAIDomainLLM(
-    model=OPENAI_MODEL,
-    max_new_tokens=256,
-)
-
 
 class AskRequest(BaseModel):
     mode: Literal["beginner", "intermediate"] = "beginner"
@@ -127,10 +122,8 @@ def filter_and_renumber_citations(
     if not citations or not answer_text:
         return answer_text, citations
 
-    # All indices we actually have objects for (e.g. {1, 2, 3})
     valid_indices = {c.index for c in citations}
 
-    # Find indices that appear in the text, in order, and are valid
     used_order: list[int] = []
     for match in CITATION_PATTERN.finditer(answer_text):
         idx = int(match.group(1))
@@ -138,19 +131,15 @@ def filter_and_renumber_citations(
             used_order.append(idx)
 
     if not used_order:
-        # No valid citations used in text
         return answer_text, []
 
-    # Build mapping old_index -> new_index (1..N)
     index_map: dict[int, int] = {
         old: new for new, old in enumerate(used_order, start=1)
     }
 
-    # Rewrite the answer text citations using the new indexes
     def _replace(m: re.Match) -> str:
         old_idx = int(m.group(1))
         if old_idx not in index_map:
-            # Drop unknown citations
             return ""
         new_idx = index_map[old_idx]
         return f"[{new_idx}]"
@@ -160,7 +149,6 @@ def filter_and_renumber_citations(
     new_answer = re.sub(r",\s*\]", "]", new_answer)
     new_answer = re.sub(r"\s{2,}", " ", new_answer).strip()
 
-    # Filter + renumber citation objects
     new_citations: List[CitationRef] = []
     for c in citations:
         if c.index in index_map:
@@ -186,12 +174,10 @@ def compute_confidence(retrieval_results: List[tuple[Any, float]]) -> Tuple[int,
     if not retrieval_results:
         return 0, "low"
 
-    # Sort descending by score just to be explicit
     scores = sorted((score for (_p, score) in retrieval_results), reverse=True)
     top = scores[0]
     second = scores[1] if len(scores) > 1 else 0.0
 
-    # Ratio top/second: how much better is the best hit?
     ratio = top / second if second > 0 else 1.0
 
     if top < 0.4 or ratio < 1.05:
@@ -215,7 +201,6 @@ def compute_confidence(retrieval_results: List[tuple[Any, float]]) -> Tuple[int,
 def ask(req: AskRequest):
     mode: Mode = req.mode
 
-    # Retrieval + confidence
     raw_results = retriever.search(req.query, top_k=req.top_k_passages)
     retrieval_results = rerank_by_recency(raw_results, STUDY_YEAR_BY_ID)
     conf_value, conf_label = compute_confidence(retrieval_results)
@@ -230,7 +215,6 @@ def ask(req: AskRequest):
             max_studies=req.max_studies,
         )
 
-        # Build citations from result.references
         citation_objs: List[CitationRef] = []
         for ref in result.references:
             if isinstance(ref, dict):
@@ -250,7 +234,6 @@ def ask(req: AskRequest):
                 )
             )
 
-        # Filter & renumber so text + list are [1], [2], ...
         filtered_answer, renumbered_citations = filter_and_renumber_citations(
             result.answer_text,
             citation_objs,
@@ -270,7 +253,6 @@ def ask(req: AskRequest):
             confidence=ConfidenceOut(value=conf_value, label=conf_label),
         )
 
-    # Build small context from top passages
     ctx = []
     for rank, (p, _score) in enumerate(retrieval_results[:3], start=1):
         ctx.append(
@@ -282,7 +264,6 @@ def ask(req: AskRequest):
             }
         )
 
-    # Mode-specific style
     if req.mode == "beginner":
         style_line = (
             "Assume the user is a beginner with little resistance-training experience. "
@@ -305,6 +286,11 @@ def ask(req: AskRequest):
     )
     instruction = base_instruction + style_line
 
+    llm = OpenAIDomainLLM(
+        model=OPENAI_MODEL,
+        max_new_tokens=256,
+    )
+
     try:
         answer_text = llm.generate_answer(
             instruction=instruction,
@@ -313,7 +299,6 @@ def ask(req: AskRequest):
         )
     except Exception as e:
         msg = str(e)
-        # Log the raw error so you can see what's happening
         print("LLM backend error:", repr(e), flush=True)
 
         if "quota" in msg.lower() or "ResourceExhausted" in msg:
@@ -329,7 +314,6 @@ def ask(req: AskRequest):
             detail=f"LLM backend error: {msg}",
         )
 
-    # Build citations list from context (indexes 1..k)
     citation_objs: List[CitationRef] = []
     for c in ctx:
         sid = c["study_id"]
@@ -343,7 +327,6 @@ def ask(req: AskRequest):
             )
         )
 
-    # Filter + renumber
     filtered_answer, renumbered_citations = filter_and_renumber_citations(
         answer_text,
         citation_objs,

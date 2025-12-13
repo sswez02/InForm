@@ -4,7 +4,6 @@ import os
 from typing import List, Dict, Any
 
 from dotenv import load_dotenv
-from openai import OpenAI
 
 from src.ft.formatting import build_prompt
 
@@ -25,6 +24,13 @@ class OpenAIDomainLLM:
         temperature: float = 0.0,
         top_p: float = 1.0,
     ) -> None:
+        try:
+            from openai import OpenAI
+        except ImportError as e:
+            raise RuntimeError(
+                "OpenAI dependency is missing. Add 'openai' to requirements.txt."
+            ) from e
+
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError(
@@ -32,7 +38,6 @@ class OpenAIDomainLLM:
                 "or add it to your server/.env file."
             )
 
-        # Single client for the whole app
         self.client = OpenAI(api_key=api_key)
         self.model_name = model
         self.max_new_tokens = max_new_tokens
@@ -47,11 +52,6 @@ class OpenAIDomainLLM:
         temperature: float | None = None,
         top_p: float | None = None,
     ) -> str:
-        """
-        Compose a prompt from instruction/query/context and call OpenAI.
-
-        Returns the assistant's answer text.
-        """
         prompt = build_prompt(instruction, query, context_passages)
 
         system_instruction = (
@@ -64,7 +64,6 @@ class OpenAIDomainLLM:
         temp = self.temperature if temperature is None else temperature
         tp = self.top_p if top_p is None else top_p
 
-        # Responses API (chat-style)
         response = self.client.responses.create(
             model=self.model_name,
             max_output_tokens=self.max_new_tokens,
@@ -85,7 +84,6 @@ class OpenAIDomainLLM:
         text_chunks: list[str] = []
 
         for item in response.output[0].content:
-
             if hasattr(item, "text"):
                 text_chunks.append(item.text)
             else:
