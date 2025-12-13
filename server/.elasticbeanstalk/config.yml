@@ -2,6 +2,10 @@ branch-defaults:
   default:
     environment: inform-api
     group_suffix: null
+environment-defaults:
+  inform-api:
+    branch: null
+    repository: null
 global:
   application_name: server
   branch: null

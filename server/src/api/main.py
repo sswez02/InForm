@@ -360,3 +360,8 @@ def ask(req: AskRequest):
         studies=[build_study_dict(s) for s in studies if s and s.id in referenced_ids],
         confidence=ConfidenceOut(value=conf_value, label=conf_label),
     )
+
+
+@app.get("/health")
+def health():
+    return {"ok": True}

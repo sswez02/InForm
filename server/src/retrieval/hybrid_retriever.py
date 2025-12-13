@@ -1,11 +1,15 @@
 from __future__ import annotations
 
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 
 from src.core.models import Passage
 from .retriever import Retriever
 from .indexer import TfIdfIndex
-from .dense_retriever import DenseRetriever
+
+try:
+    from .dense_retriever import DenseRetriever  # type: ignore
+except Exception:
+    DenseRetriever = None  # type: ignore
 
 
 class HybridRetriever(Retriever):
@@ -23,14 +27,16 @@ class HybridRetriever(Retriever):
         self.dense_weight = dense_weight
 
         self.tfidf = TfIdfIndex()
-        self.dense = DenseRetriever()
+        self.dense = DenseRetriever() if DenseRetriever is not None else None
         self.passages: List[Passage] = []
 
     def add_passages(self, passages: List[Passage]) -> None:
         self.passages = passages
         self.tfidf.add_passages(passages)
         self.tfidf.build()
-        self.dense.add_passages(passages)
+
+        if self.dense is not None:
+            self.dense.add_passages(passages)
 
     def _normalise_scores(self, scores: Dict[int, float]) -> Dict[int, float]:
         if not scores:
@@ -50,7 +56,8 @@ class HybridRetriever(Retriever):
         If dense isn't enabled, shift all weight to TF-IDF.
         Otherwise keep original weights (renormalised if they don't sum to 1).
         """
-        if not getattr(self.dense, "enabled", False):
+        dense_enabled = bool(self.dense) and bool(getattr(self.dense, "enabled", False))
+        if not dense_enabled:
             return 1.0, 0.0
 
         total = self.tfidf_weight + self.dense_weight
@@ -65,7 +72,13 @@ class HybridRetriever(Retriever):
         k_each = min(top_k * 2, len(self.passages))
 
         sparse_results = self.tfidf.search(query, top_k=k_each)
-        dense_results = self.dense.search(query, top_k=k_each)  # returns [] if disabled
+
+        if self.dense is not None:
+            dense_results = self.dense.search(
+                query, top_k=k_each
+            )  # returns [] if disabled
+        else:
+            dense_results = []
 
         sparse_scores: Dict[int, float] = {p.id: s for (p, s) in sparse_results}
         dense_scores: Dict[int, float] = {p.id: s for (p, s) in dense_results}
