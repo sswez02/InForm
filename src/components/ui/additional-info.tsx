@@ -101,7 +101,9 @@ export function AdditionalInfo() {
           <div className='relative mx-auto flex h-[210px] w-[260px] items-center justify-center md:h-[230px] md:w-[280px]'>
             <div className='flex flex-col items-center gap-4'>
               <a
-                href='#'
+                href='https://docs.google.com/document/d/1dl-clKpKe7fA6tvJ07uORNMl7Ms8Ja4p6CH0eqlXlNQ/edit?usp=sharing'
+                target='_blank'
+                rel='noreferrer'
                 onMouseEnter={() => setLinkVariant(true)}
                 onMouseLeave={() => setLinkVariant(false)}
                 className='
@@ -117,7 +119,9 @@ export function AdditionalInfo() {
               </a>
 
               <a
-                href='#'
+                href='https://docs.google.com/document/d/1LcseJ-41U6HMBc1nJWliYuqRzL9GHk8y0tx9JGYFYFw/edit?usp=sharing'
+                target='_blank'
+                rel='noreferrer'
                 onMouseEnter={() => setLinkVariant(true)}
                 onMouseLeave={() => setLinkVariant(false)}
                 className='

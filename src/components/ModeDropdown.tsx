@@ -46,7 +46,7 @@ const ModeDropdown: React.FC<ModeDropdownProps> = ({ mode, onModeChange }) => {
       <button
         type='button'
         onClick={() => setIsOpen((o) => !o)}
-        className='w-full rounded-2xl cursor-pointer select-none bg-neutral-900 border border-neutral-800 shadow-xl shadow-black/40 px-3 py-2.5 flex items-center gap-3 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'
+        className='w-full rounded-2xl cursor-pointer select-none bg-neutral-900 border border-neutral-800 shadow-xl shadow-black/40 px-3 py-2.5 flex items-center gap-3 transition-all duration-300 ease-[cubic-bezier(0.4,_0,_0.2,_1)]'
       >
         <div className='flex-1 overflow-hidden text-left'>
           <p className='text-xs font-semibold text-neutral-50'>{current.label} mode</p>
@@ -59,7 +59,7 @@ const ModeDropdown: React.FC<ModeDropdownProps> = ({ mode, onModeChange }) => {
           className='
             absolute left-0 z-50 w-full
             opacity-100 translate-y-0 pointer-events-auto
-            transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]
+            transition-all duration-200 ease-[cubic-bezier(0.4,_0,_0.2,_1)]
             bottom-full mb-2
             md:bottom-auto md:top-full md:mt-2
           '
@@ -76,7 +76,7 @@ const ModeDropdown: React.FC<ModeDropdownProps> = ({ mode, onModeChange }) => {
                       key={value}
                       type='button'
                       onClick={() => handleSelect(value)}
-                      className={`w-full flex flex-col items-start rounded-xl px-3 py-2 text-left transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-neutral-900 ${
+                      className={`w-full flex flex-col items-start rounded-xl px-3 py-2 text-left transition-all duration-200 ease-[cubic-bezier(0.4,_0,_0.2,_1)] hover:bg-neutral-900 ${
                         isActive ? 'bg-neutral-900' : 'bg-transparent'
                       }`}
                     >
