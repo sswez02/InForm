@@ -34,13 +34,13 @@ class DenseRetriever(Retriever):
         return self.model is not None
 
     def add_passages(self, passages: List[Passage]) -> None:
-        self.passages = passages
+        self.passages = list(passages)
 
         if not self.enabled:
             self.embeddings = None
             return
 
-        texts = [p.text for p in passages]
+        texts = [p.text for p in self.passages]
         if not texts:
             self.embeddings = None
             return
@@ -59,6 +59,8 @@ class DenseRetriever(Retriever):
         scores = np.dot(self.embeddings, q_emb)
 
         top_k = min(top_k, len(self.passages))
+        if top_k <= 0:
+            return []
         top_k_idx = np.argpartition(-scores, top_k - 1)[:top_k]
         top_k_idx = top_k_idx[np.argsort(-scores[top_k_idx])]
 

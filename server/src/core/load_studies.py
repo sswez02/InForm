@@ -43,9 +43,14 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
         studies.append(study)
 
         sections = data.get("sections", {})
+        if not isinstance(sections, dict):
+            sections = {}
+
         for section_name, text in sections.items():
             if not text:
                 continue
+
+            # Create Passage
             passages.append(
                 Passage(
                     id=passage_id,
@@ -55,5 +60,12 @@ def load_studies_from_dir(studies_dir: Path) -> Tuple[List[Study], List[Passage]
                 )
             )
             passage_id += 1
+
+    # Check for duplicate Passage IDs
+    ids = [p.id for p in passages]
+    if len(ids) != len(set(ids)):
+        raise RuntimeError(
+            f"Duplicate Passage.id detected: {len(ids) - len(set(ids))} duplicates"
+        )
 
     return studies, passages
