@@ -77,20 +77,20 @@ const ConfidenceBar: React.FC<{ confidence: { value: number; label: string } }> 
         <span className='text-xs text-neutral-400 tracking-wide mt-[2px]'>confidence</span>
       </div>
 
-      <div className='mt-2 h-2 w-full rounded-full bg-neutral-900 overflow-hidden relative'>
+      <div className='mt-2 h-2 w-full rounded-full bg-neutral-900 overflow-hidden'>
         <div
-          className='absolute inset-0'
+          className='h-full w-full origin-left'
           style={{
+            transform: `scaleX(${percent / 100})`,
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
+            transformOrigin: 'left',
             backgroundImage:
               'linear-gradient(to right, ' +
               '#34d399 0%, #34d399 33.33%, ' +
               '#a3e635 33.33%, #a3e635 66.66%, ' +
               '#facc15 66.66%, #facc15 100%)',
           }}
-        />
-        <div
-          className='absolute inset-y-0 right-0 bg-neutral-900'
-          style={{ width: `${100 - percent}%` }}
         />
       </div>
     </div>
