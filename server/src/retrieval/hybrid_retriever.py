@@ -10,7 +10,8 @@ from .dense_retriever import DenseRetriever
 
 class HybridRetriever(Retriever):
     """
-    Hybrid retriever that combines sparse (TF-IDF) and dense (embeddings) scores into a single ranking
+    Hybrid retriever that combines sparse (TF-IDF) and dense (embeddings) scores.
+    If dense retriever is unavailable, it falls back to TF-IDF only.
     """
 
     def __init__(
@@ -32,9 +33,6 @@ class HybridRetriever(Retriever):
         self.dense.add_passages(passages)
 
     def _normalise_scores(self, scores: Dict[int, float]) -> Dict[int, float]:
-        """
-        Min-max normalise scores to [0, 1] range
-        """
         if not scores:
             return {}
 
@@ -47,39 +45,46 @@ class HybridRetriever(Retriever):
 
         return {k: (v - s_min) / (s_max - s_min) for k, v in scores.items()}
 
-    def search(self, query: str, top_k: int = 10) -> List[Tuple[Passage, float]]:
+    def _effective_weights(self) -> tuple[float, float]:
         """
-        Run both TF-IDF and Dense retrieval, normalise scores, and combine them
+        If dense isn't enabled, shift all weight to TF-IDF.
+        Otherwise keep original weights (renormalised if they don't sum to 1).
+        """
+        if not getattr(self.dense, "enabled", False):
+            return 1.0, 0.0
 
-        Returns a list of (Passage, fused_score) sorted by fused_score desc
-        """
+        total = self.tfidf_weight + self.dense_weight
+        if total <= 0:
+            return 0.5, 0.5
+        return self.tfidf_weight / total, self.dense_weight / total
+
+    def search(self, query: str, top_k: int = 10) -> List[Tuple[Passage, float]]:
         if not self.passages:
             return []
 
         k_each = min(top_k * 2, len(self.passages))
 
         sparse_results = self.tfidf.search(query, top_k=k_each)
-        dense_results = self.dense.search(query, top_k=k_each)
+        dense_results = self.dense.search(query, top_k=k_each)  # returns [] if disabled
 
-        # Map list of (Passage, score)” to “passage_id -> score
         sparse_scores: Dict[int, float] = {p.id: s for (p, s) in sparse_results}
         dense_scores: Dict[int, float] = {p.id: s for (p, s) in dense_results}
 
-        # Normalise each set to [0, 1]
         sparse_norm = self._normalise_scores(sparse_scores)
         dense_norm = self._normalise_scores(dense_scores)
 
-        # Fuse sparse and dense normalised
-        fused_scores: Dict[int, float] = {}
+        w_sp, w_de = self._effective_weights()
 
+        fused_scores: Dict[int, float] = {}
         for p in self.passages:
             pid = p.id
             if pid not in sparse_norm and pid not in dense_norm:
                 continue
+
             s_sp = sparse_norm.get(pid, 0.0)
             s_de = dense_norm.get(pid, 0.0)
+            fused = w_sp * s_sp + w_de * s_de
 
-            fused = self.tfidf_weight * s_sp + self.dense_weight * s_de
             if fused > 0.0:
                 fused_scores[pid] = fused
 
@@ -87,15 +92,8 @@ class HybridRetriever(Retriever):
             return []
 
         sorted_ids = sorted(fused_scores.keys(), key=lambda pid: -fused_scores[pid])
-
         top_ids = sorted_ids[:top_k]
 
-        # Build Passage lookup by id
         by_id = {p.id: p for p in self.passages}
 
-        results: List[Tuple[Passage, float]] = []
-        for pid in top_ids:
-            p = by_id[pid]
-            results.append((p, fused_scores[pid]))
-
-        return results
+        return [(by_id[pid], fused_scores[pid]) for pid in top_ids]
