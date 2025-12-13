@@ -24,6 +24,8 @@ app = FastAPI(title="Evidence-Based Fitness Agent")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://informapp.dev",
+        "https://www.informapp.dev",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
     ],
