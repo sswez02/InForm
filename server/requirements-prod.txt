@@ -1,0 +1,43 @@
+﻿
+# --- ML / AI ---
+# torch==2.7.1
+# transformers==4.57.3
+# sentence-transformers==5.1.2
+# sentencepiece==0.2.1
+# datasets==4.4.1
+# accelerate==1.12.0
+# peft==0.18.0
+# huggingface-hub==0.36.0
+# tokenizers==0.22.1
+# safetensors==0.7.0
+
+# --- Data / Trading ---
+numpy==2.2.3
+pandas==2.2.3
+scipy==1.16.0
+scikit-learn==1.7.0
+optuna==4.4.0
+backtesting==0.6.4
+
+# --- Plotting / notebooks ---
+matplotlib==3.10.3
+seaborn==0.13.2
+plotly==6.2.0
+bokeh==3.7.3
+ipython==9.0.1
+ipykernel==6.29.5
+jupyter_client==8.6.3
+jupyter_core==5.7.2
+
+# --- Dev tooling ---
+black==25.1.0
+pytest==9.0.1
+debugpy==1.8.12
+pipreqs==0.4.13
+rich==14.2.0
+typer==0.20.0
+
+uvicorn[standard]==0.37.0
+fastapi==0.116.1
+gunicorn==23.0.0
+uvicorn-worker==0.4.0 
