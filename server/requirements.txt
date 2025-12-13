@@ -103,7 +103,6 @@ openai==2.9.0
 optuna==4.4.0
 packaging==24.2
 pandas==2.2.3
-pandas_ta==0.3.14b0
 parso==0.8.4
 pathspec==0.12.1
 peft==0.18.0
