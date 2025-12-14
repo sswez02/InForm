@@ -177,24 +177,29 @@ def compute_confidence(retrieval_results: List[tuple[Any, float]]) -> Tuple[int,
         return 0, "low"
 
     scores = sorted((score for (_p, score) in retrieval_results), reverse=True)
-    top = scores[0]
-    second = scores[1] if len(scores) > 1 else 0.0
+    top = float(scores[0])
+    second = float(scores[1]) if len(scores) > 1 else 0.0
 
-    ratio = top / second if second > 0 else 1.0
+    # Normalise top into 0..1
+    top01 = (top - 0.25) / (0.85 - 0.25)
+    top01 = max(0.0, min(1.0, top01))
 
-    if top < 0.4 or ratio < 1.05:
+    # Separation signal: how much better is #1 than #2?
+    sep = (top - second) / (abs(top) + 1e-8)
+    sep01 = max(0.0, min(1.0, sep / 0.40))  # 0.40 margin => "very separated"
+
+    # Combine them
+    conf01 = 0.75 * top01 + 0.25 * sep01
+
+    value = int(round(conf01 * 100))
+
+    # Labels from the continuous value
+    if value < 35:
         label = "low"
-    elif top < 0.7 or ratio < 1.15:
+    elif value < 70:
         label = "medium"
     else:
         label = "high"
-
-    if label == "high":
-        value = 90
-    elif label == "medium":
-        value = 65
-    else:
-        value = 40
 
     return value, label
 
