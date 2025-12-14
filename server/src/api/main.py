@@ -261,15 +261,24 @@ def ask(req: AskRequest):
         )
 
     ctx = []
-    for rank, (p, _score) in enumerate(retrieval_results[:3], start=1):
+    seen_studies = set()
+
+    for p, _score in retrieval_results:
+        if p.study_id in seen_studies:
+            continue
+        seen_studies.add(p.study_id)
+
         ctx.append(
             {
                 "study_id": p.study_id,
-                "citation_index": rank,
+                "citation_index": len(ctx) + 1,
                 "section": p.section,
                 "text": p.text,
             }
         )
+
+        if len(ctx) >= req.max_studies:
+            break
 
     if req.mode == "beginner":
         style_line = (
