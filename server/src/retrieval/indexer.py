@@ -118,7 +118,7 @@ class TfIdfIndex:
             self.passage_vectors @ query_vector
         )  # single similarity score per passage using matrix multiplication
 
-        # Get indices of top scores
+        # Get indexes of top scores
         top_index = np.argsort(-scores)[:top_k]
         results: List[Tuple[Passage, float]] = []  # (passage, score) pairs
         for i in top_index:

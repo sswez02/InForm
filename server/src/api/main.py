@@ -105,7 +105,7 @@ for s in studies:
     if y is not None:
         STUDY_YEAR_BY_ID[s.id] = y
 
-CITATION_PATTERN = re.compile(r"\[(\d+)\]")
+CITATION_GROUP_PATTERN = re.compile(r"\[([0-9]+(?:\s*,\s*[0-9]+)*)\]")
 
 
 def filter_and_renumber_citations(
@@ -114,23 +114,24 @@ def filter_and_renumber_citations(
 ) -> tuple[str, List[CitationRef]]:
     """
     Keep only citations that actually appear in the answer text,
-    and renumber them sequentially [1], [2], ... in both the text
-    and the citation list
-
-    If the model invents a citation index that does not correspond
-    to a known CitationRef (e.g. [7] when we only have 1–3),
-    that citation is removed from the text
+    including grouped ones like [1, 3], and renumber them sequentially.
     """
     if not citations or not answer_text:
         return answer_text, citations
 
-    valid_indices = {c.index for c in citations}
+    valid_indexes = {c.index for c in citations}
 
+    # Discover used citation indexes in first appearance order
     used_order: list[int] = []
-    for match in CITATION_PATTERN.finditer(answer_text):
-        idx = int(match.group(1))
-        if idx in valid_indices and idx not in used_order:
-            used_order.append(idx)
+    for m in CITATION_GROUP_PATTERN.finditer(answer_text):
+        raw = m.group(1)  # e.g. "1, 3"
+        parts = [p.strip() for p in raw.split(",")]
+        for p in parts:
+            if not p.isdigit():
+                continue
+            idx = int(p)
+            if idx in valid_indexes and idx not in used_order:
+                used_order.append(idx)
 
     if not used_order:
         return answer_text, []
@@ -139,31 +140,50 @@ def filter_and_renumber_citations(
         old: new for new, old in enumerate(used_order, start=1)
     }
 
-    def _replace(m: re.Match) -> str:
-        old_idx = int(m.group(1))
-        if old_idx not in index_map:
+    def _replace_group(m: re.Match) -> str:
+        raw = m.group(1)
+        parts = [p.strip() for p in raw.split(",")]
+
+        kept_new: list[int] = []
+        for p in parts:
+            if not p.isdigit():
+                continue
+            old_idx = int(p)
+            if old_idx in index_map:
+                kept_new.append(index_map[old_idx])
+
+        # If none of the indexes are valid, remove the whole bracket group
+        if not kept_new:
             return ""
-        new_idx = index_map[old_idx]
-        return f"[{new_idx}]"
 
-    new_answer = CITATION_PATTERN.sub(_replace, answer_text)
+        # De-dupe while preserving order
+        seen = set()
+        kept_new2 = []
+        for x in kept_new:
+            if x not in seen:
+                seen.add(x)
+                kept_new2.append(x)
 
-    new_answer = re.sub(r",\s*\]", "]", new_answer)
+        return "[" + ", ".join(str(x) for x in kept_new2) + "]"
+
+    new_answer = CITATION_GROUP_PATTERN.sub(_replace_group, answer_text)
+
+    # Cleanup: remove odd leftovers like " , ]" or double spaces
     new_answer = re.sub(r"\s{2,}", " ", new_answer).strip()
+    new_answer = re.sub(r"\s+\.", ".", new_answer)
+    new_answer = re.sub(r"\s+,", ",", new_answer)
 
+    # Renumber citation objects
     new_citations: List[CitationRef] = []
     for c in citations:
         if c.index in index_map:
             new_citations.append(
                 CitationRef(
-                    index=index_map[c.index],
-                    study_id=c.study_id,
-                    title=c.title,
+                    index=index_map[c.index], study_id=c.study_id, title=c.title
                 )
             )
 
     new_citations.sort(key=lambda c: c.index)
-
     return new_answer, new_citations
 
 
