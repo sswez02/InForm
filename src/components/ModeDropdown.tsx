@@ -111,14 +111,21 @@ const ModeDropdown: React.FC<ModeDropdownProps> = ({
         createPortal(
           <div
             ref={menuRef}
-            className='fixed z-[9999]'
+            className='fixed z-[9999] pointer-events-none'
             style={{
               left: menuPos.left,
               top: openDirection === 'up' ? menuPos.top : menuPos.bottom,
               width: menuPos.width,
             }}
           >
-            <div className={openDirection === 'up' ? 'mb-2 -translate-y-full' : 'mt-2'}>
+            <div
+              className={
+                openDirection === 'up' ? 'pointer-events-auto' : 'mt-2 pointer-events-auto'
+              }
+              style={
+                openDirection === 'up' ? { transform: 'translateY(calc(-100% - 8px))' } : undefined
+              }
+            >
               <div className='rounded-2xl border border-neutral-800 bg-neutral-950 shadow-2xl shadow-black/60'>
                 <div className='px-2 pb-2 pt-2'>
                   <div className='space-y-1'>
