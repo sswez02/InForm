@@ -95,7 +95,11 @@ const PromptInput: React.FC<PromptInputProps> = ({
       </div>
 
       <div className='flex items-center justify-between gap-3'>
-        <ModeDropdown mode={mode} onModeChange={onModeChange} />
+        <ModeDropdown
+          mode={mode}
+          onModeChange={onModeChange}
+          openDirection={variant === 'hero' ? 'down' : 'up'}
+        />
 
         <div className='flex items-center gap-2 mt-2 md:mt-6'>
           <button
