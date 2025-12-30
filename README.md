@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# InForm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 https://informapp.dev/
 
-Currently, two official plugins are available:
+**Try it:** Ask “How often should I train each muscle group?” and switch between Beginner and Intermediate modes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**InForm** is an evidence-based AI assistant for training and nutrition.
 
-## React Compiler
+It combines a modern conversational UI with a **retrieval-augmented backend grounded in peer-reviewed research**. The project is built as a **production-style, full-stack system** to demonstrate fundamentals, clean API design, and product decisions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Problem & Approach
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Most fitness and nutrition apps rely on generic advice or opaque AI outputs.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+InForm addresses this by:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- grounding answers in **retrieved research passages**
+- adapting explanation depth via **Beginner / Intermediate modes**
+- exposing **citations and confidence** to the user
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The focus is correctness, clarity, and trust—not just fluent text generation.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Core Capabilities
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Evidence-based Q&A for training, nutrition, recovery, and supplements
+- Retrieval-Augmented Generation (RAG) over curated studies
+- Mode-aware responses (beginner vs. intermediate)
+- Confidence scoring and explicit citations
+
+---
+
+## Technical Overview
+
+### Frontend
+
+- React + TypeScript (Vite)
+- Tailwind CSS
+- shadcn/ui primitives
+- Custom chat, FAQ, and confidence components
+
+### Backend
+
+- FastAPI (Python)
+- Research retrieval pipeline
+- Pluggable response generation:
+  - deterministic baseline
+  - LLM-powered generation
+
+---
+
+## System Architecture
+
+1. Client sends an `/ask` request containing:
+   - user query
+   - experience mode
+   - retrieval parameters
+2. Backend:
+   - retrieves relevant study passages
+   - constructs an answer from retrieved evidence
+   - computes confidence and citations
+3. Client:
+   - renders the answer, confidence bar, and references
+
+This separation keeps the system **modular, testable, and extensible**.
+
+---
+
+## Key Design Choices
+
+- **RAG over fine-tuning:** ensures answers stay grounded in evidence and are easier to audit.
+- **Explicit confidence scoring:** communicates uncertainty instead of overclaiming.
+- **Mode-based explanations:** same facts, different depth, to serve multiple user skill levels.
+
+---
+
+## License
+
+MIT License
