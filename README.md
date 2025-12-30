@@ -1,6 +1,14 @@
 # InForm
 
-🔗 https://informapp.dev/
+<p align="center">
+  <a href="https://informapp.dev/" target="_blank" rel="noopener noreferrer">
+    <img src="public/README.gif" alt="InForm demo" width="900" />
+  </a>
+</p>
+
+<p align="center">
+  🔗 <a href="https://informapp.dev/">https://informapp.dev/</a>
+</p>
 
 **Try it:** Ask “How often should I train each muscle group?” and switch between Beginner and Intermediate modes.
 
