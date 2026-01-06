@@ -2,7 +2,7 @@
 
 InForm is an evidence-grounded Q&A system for training, supplementation, and nutrition. It answers **only using a curated on-disk corpus** of studies, and returns **inline numeric citations** plus a **retrieval-based confidence** score
 
-**Credibility note:** the corpus is stored on-disk on the server; **TF-IDF stats and dense embeddings are built in-memory at startup**
+**Note:** the corpus is stored on-disk on the server; **TF-IDF stats and dense embeddings are built in-memory at startup**
 
 ---
 
@@ -27,7 +27,7 @@ flowchart LR
       API["FastAPI backend<br/>POST /ask"]
       GEN["Generation<br/>Baseline generator OR OpenAI Chat Completions"]
       RET["Retrieval<br/>TF-IDF + Dense (SentenceTransformer)"]
-      CONF["Confidence scoring<br/>0–100 + label"]
+      CONF["Confidence scoring<br/>0-100 + label"]
       CITE["Citation validation<br/>remove invalid, renumber sequentially"]
       DATA["On-disk corpus<br/>studies_master.csv + per-study JSON passages"]
       IDX["In-memory indexes built at startup<br/>TF-IDF stats + dense embeddings"]

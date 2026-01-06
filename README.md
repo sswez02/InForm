@@ -41,6 +41,15 @@ The focus is correctness, clarity, and trust—not just fluent text generation.
 
 ---
 
+## Docs
+
+- Architecture: `docs/architecture.md`
+- Retrieval & grounding: `docs/retrieval.md`
+- Evaluation: `docs/evaluation.md`
+- Corpus updates: `docs/corpus_update.md`
+
+---
+
 ## Technical Overview
 
 ### Frontend
