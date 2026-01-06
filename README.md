@@ -46,9 +46,11 @@ InForm addresses this by:
 ## Docs
 
 - Architecture: `docs/architecture.md`
-- Retrieval & grounding: `docs/retrieval.md`
+- Retrieval: `docs/retrieval.md`
+- Retrieval scripts: `docs/retrieval_scripts.md`
 - Evaluation: `docs/evaluation.md`
 - Corpus updates: `docs/corpus_update.md`
+- Deploy commands: `docs/deploy.md`
 
 ---
 

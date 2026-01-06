@@ -1,4 +1,4 @@
-1. Project Structure (High-Level)
+1. Project Structure
 
 project_root/
 src/
