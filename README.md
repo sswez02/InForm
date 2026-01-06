@@ -16,6 +16,10 @@
 
 It combines a modern conversational UI with a **retrieval-augmented backend grounded in peer-reviewed research**. The project is built as a **production-style, full-stack system** to demonstrate fundamentals, clean API design, and product decisions
 
+- 115-study on-disk corpus; hybrid TF-IDF + dense retrieval (0.4/0.6) with citation validation
+- 99-answer eval: 620 chars avg, 1.63 citations/answer; 56.6% high-confidence
+- Production: gpt-3.5-turbo, ~3-8s typical latency
+
 ---
 
 ## Problem & Approach
