@@ -36,3 +36,4 @@ src/assets/movie.mp4
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+eb-logs.txt
