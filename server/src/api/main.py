@@ -35,7 +35,9 @@ app.add_middleware(
 )
 
 # Load models on startup
-store = StudyStore.from_dir(Path("data/studies"))
+store = StudyStore.from_dir(
+    Path(__file__).resolve().parent.parent.parent / "data" / "studies"
+)
 studies = store.studies
 passages: List[Passage] = store.get_all_passages()
 
