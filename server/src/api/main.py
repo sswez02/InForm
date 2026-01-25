@@ -36,7 +36,9 @@ app.add_middleware(
 
 # Load models on startup
 store = StudyStore.from_dir(Path("data/studies"))
-studies = store.get_all_studies()
+store = StudyStore.from_dir(
+    Path(__file__).resolve().parent.parent.parent / "data" / "studies"
+)
 passages: List[Passage] = store.get_all_passages()
 
 retriever = HybridRetriever(tfidf_weight=0.4, dense_weight=0.6)
