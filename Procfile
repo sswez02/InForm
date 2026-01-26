@@ -1,1 +1,1 @@
-web: gunicorn application:application --bind 0.0.0.0:8000 --chdir /var/app/current
+web: gunicorn application:application --bind 0.0.0.0:8000 --timeout 120 --workers 1 --worker-class uvicorn.workers.UvicornWorker
