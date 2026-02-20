@@ -1,7 +1,10 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "http://13.236.51.25/:path*" },
-    { "source": "/openapi.json", "destination": "http://13.236.51.25/openapi.json" },
-    { "source": "/docs/oauth2-redirect", "destination": "http://13.236.51.25/docs/oauth2-redirect" }
+    { "source": "/api/:path*", "destination": "http://13.55.117.218/:path*" },
+    { "source": "/openapi.json", "destination": "http://13.55.117.218/openapi.json" },
+    {
+      "source": "/docs/oauth2-redirect",
+      "destination": "http://13.55.117.218/docs/oauth2-redirect"
+    }
   ]
 }
