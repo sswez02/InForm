@@ -1,10 +1,10 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "http://13.55.117.218/:path*" },
-    { "source": "/openapi.json", "destination": "http://13.55.117.218/openapi.json" },
+    { "source": "/api/:path*", "destination": "http://inform-api.informapp.dev/:path*" },
+    { "source": "/openapi.json", "destination": "http://inform-api.informapp.dev/openapi.json" },
     {
       "source": "/docs/oauth2-redirect",
-      "destination": "http://13.55.117.218/docs/oauth2-redirect"
+      "destination": "http://inform-api.informapp.dev/docs/oauth2-redirect"
     }
   ]
 }
