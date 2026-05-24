@@ -1,6 +1,7 @@
 ﻿fastapi==0.116.1
 uvicorn==0.37.0
 openai==2.9.0
+python-dotenv==1.2.2
 
 numpy==2.2.3
 scipy==1.16.0
