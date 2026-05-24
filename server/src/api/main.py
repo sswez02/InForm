@@ -18,26 +18,35 @@ from .api_utils import rerank_by_recency
 
 from src.ft.openai_llm import OpenAIDomainLLM
 
-
 app = FastAPI(title="Evidence-Based Fitness Agent")
+
+FRONTEND_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "FRONTEND_ORIGINS",
+        "https://informapp.dev,https://www.informapp.dev,http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174",
+    ).split(",")
+    if origin.strip()
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://informapp.dev",
-        "https://www.informapp.dev",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=FRONTEND_ORIGINS,
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # Load models on startup
-store = StudyStore.from_dir(
-    Path(__file__).resolve().parent.parent.parent / "data" / "studies"
-)
+DEFAULT_STUDIES_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "studies"
+
+STUDIES_DIR = Path(os.getenv("STUDIES_DIR", str(DEFAULT_STUDIES_DIR)))
+if not STUDIES_DIR.is_absolute():
+    STUDIES_DIR = (Path.cwd() / STUDIES_DIR).resolve()
+
+print(f"Loading studies from: {STUDIES_DIR}", flush=True)
+
+store = StudyStore.from_dir(STUDIES_DIR)
 studies = store.studies
 passages: List[Passage] = store.get_all_passages()
 
