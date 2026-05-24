@@ -1,39 +1,90 @@
-# Python cache
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+server/.env
+server/.env.*
+!server/.env.example
+
+# Node / Vite frontend
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+
+# Python
 __pycache__/
-**/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.python-version
 
-# Local data / eval JSON outputs (keep config JSON like package.json tracked)
-data/**/*.json
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
 
-# Model weights / checkpoints (HF / PyTorch / etc.)
-*.bin
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# ML / model artifacts
+checkpoints/
+server/checkpoints/
+model_lora/
+server/model_lora/
+
 *.pt
 *.pth
-*.ckpt
+*.bin
 *.safetensors
+*.ckpt
 *.onnx
 
-# Model / training directories
-model_lora/
-models/e
-checkpoints/
-outputs/
-runs/
+# Runtime logs / generated files
 logs/
+server/data/logs/
+*.log
 
-# PDFs
-*.pdf
+# Evaluation outputs
+server/data/eval/
+server/data/ft/
 
-# Environment
-*.env
-node_modules
-src/assets/movie.mp4
+# Generated plots
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.webp
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-eb-logs.txt
+# Large source PDFs
+# Keep out of deployment unless explicitly needed
+server/data/pdfs/
+
+# Keep runtime study JSON files
+# DO NOT ignore this folder
+!server/data/studies/
+!server/data/studies/*.json
+
+# AWS Elastic Beanstalk
+.elasticbeanstalk/
+server/.elasticbeanstalk/
+
+# OS / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
